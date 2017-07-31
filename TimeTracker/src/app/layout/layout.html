@@ -1,0 +1,76 @@
+   <header>
+            <!-- header container starts -->
+            <div class="iko_active_sos_header">                
+                <div class="iko_active_sos_header_logo">
+                    <img src="assets/images/ikogen_logo.png" alt="img">                    
+                </div>
+                <span class="iko_active_sos_country_name">{{countryName}}</span>
+                <div class="iko_active_sos_logout_section">
+                    <img src="assets/images/iko_admin_prof_img.png" alt="img">
+                    <div class="iko_active_sos_logout_container">
+                        <span class="iko_active_sos_logout_name">{{name}}</span>
+                        <span class="iko_active_sos_logout_text" (click)="logout()">Logout</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <div class="iko_active_sos_header_tab">
+            <div class="iko_wrapper">
+                <ul class="nav nav-tabs view_details_tab iko_active_sos_li">
+                    <!-- tab section for admin main page -->
+                    <li *ngIf="tabAccess1" [ngClass]="{ 'active': tab1}">
+                        <a data-toggle="tab" (click)="onTabClicks(0)">Home</a>
+                        <div class="active_viewdetails_tab iko_active_sos_li_border">
+                            <!-- border bottom for active class -->
+                            <img *ngIf="tab1" src="assets/images/border_green.png" alt="img">
+                            <!-- active image -->
+                        </div>
+                    </li>
+                    <li *ngIf="tabAccess2" [ngClass]="{ 'active': tab2}">
+                        <a data-toggle="tab" (click)="onTabClicks(1)">Project</a>
+                        <div class="active_viewdetails_tab iko_active_sos_li_border">
+                            <!-- border bottom for active class -->
+                            <img *ngIf="tab2" src="assets/images/border_green.png" alt="img">
+                            <!-- active image -->
+                        </div>
+                    </li>
+                    <li *ngIf="tabAccess3" [ngClass]="{ 'active': tab3}">
+                        <a data-toggle="tab" (click)="onTabClicks(2)">Times</a>
+                        <div class="active_viewdetails_tab iko_active_sos_li_border">
+                            <!-- border bottom for active class -->
+                            <img *ngIf="tab3" src="assets/images/border_green.png" alt="img">
+                            <!-- active image -->
+                        </div>
+                    </li>
+                    <li *ngIf="tabAccess4" [ngClass]="{ 'active': tab4}">
+                        <a data-toggle="tab" (click)="onTabClicks(3)">Employee</a>
+                        <div class="active_viewdetails_tab iko_active_sos_li_border">
+                            <!-- border bottom for active class -->
+                            <img *ngIf="tab4" src="assets/images/border_green.png" alt="img">
+                            <!-- active image -->
+                        </div>
+                    </li>
+                    <li *ngIf="tabAccess5" [ngClass]="{ 'active': tab5}">
+                        <a data-toggle="tab" (click)="onTabClicks(4)">My Profile</a>
+                        <div class="active_viewdetails_tab iko_active_sos_li_border">
+                            <!-- border bottom for active class -->
+                            <img *ngIf="tab5" src="assets/images/border_green.png" alt="img">
+                            <!-- active image -->
+                        </div>
+					</li>
+					<li *ngIf="tabAccess5" [ngClass]="{ 'active': tab5}">
+                        <a data-toggle="tab" (click)="onTabClicks(5)">Settings</a>
+                        <div class="active_viewdetails_tab iko_active_sos_li_border">
+                            <!-- border bottom for active class -->
+                            <img *ngIf="tab6" src="assets/images/border_green.png" alt="img">
+                            <!-- active image -->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-wrap" id="content-wrap">
+            <main id="content" class="content view-animate fade-up" role="main">
+                <router-outlet></router-outlet>
+            </main>
+        </div>

@@ -1,0 +1,706 @@
+﻿body {
+font: 14px  Mukta-ExtraLight !important;
+
+}
+.main
+{
+	 width		:940px
+	;height		:Auto
+	;margin		:0 auto
+	/*;border		:1px solid black*/
+}
+.MainContent
+{
+    position: relative;
+    width: 940px;
+    margin: auto;
+    margin-top: 10px;    
+	border-bottom:none;
+  
+}
+.Config_Settings_Container
+{
+    width: auto;
+    position: relative;
+    height: auto;
+}
+
+.content_Rel
+{
+    position:relative;    
+}
+
+.header_Controls_Container
+{
+    position: relative;
+    height: 50px;
+}
+ .header_Controls
+{
+    position: relative;
+    width: 380px;
+    height: 45px;
+    float: left;
+}
+.abs_Controls
+{
+    font: 14px  Mukta-ExtraLight !important;
+    position:absolute;
+   top:5px;
+   
+}
+ 
+.header_Label_Font
+{
+   /* font-size: 16px;
+    font-weight: bold;*/
+  
+  position:relative;
+  /*margin-left:300px;*/
+  margin-left:15px;
+}
+.Grid_Header_Font
+{
+	/* font-size: 16px;
+    font-weight: bold;*/
+  
+}
+.header_lbl_BG
+{
+	 font-size: 16px;
+    font-weight: bold;
+   position :relative;
+  margin-left:10px;
+}
+.Content_title
+{
+    height: 30px;
+    background-color: ActiveBorder;
+}
+.Content_FootrConfig
+{
+    height: 30px;
+    background-color: #F0F0F0;
+}
+.Wrk_Hrs_Container
+{
+    position: relative;
+    width: auto;
+}
+.Up_Lw_Body
+{
+    height:50px;
+    position:relative;
+}
+.normal_control_div
+{
+    font: 14px  Mukta-ExtraLight !important;
+	 height: 30px;
+    position:relative;
+}
+.normal_control_Auto
+{
+	 height: 50px;
+    position:relative;
+}	
+
+.HM_Container
+{
+    position: relative;
+    width: auto;
+}
+.Content_Container
+{
+	 position: relative;
+    width: auto;
+    height:auto;
+}
+.TempIdDet_Header_Body_Footer_Pos
+{
+	position:relative;
+	height:auto;
+}
+
+
+.TempIdDet_HeaderTab
+{
+	
+	 height: 30px;
+    background-color: ButtonFace;
+}
+.Header_Title_BG
+{
+	height: 30px;
+    /*width:188px !important;*/
+    background-color: #B4B4B4;
+}
+.TempIdDet_Body_Up
+{
+	position:relative;
+	height:100px;
+	
+}
+.TempIdDet_Body_Up1
+{
+    position:relative;
+	height:50px;
+}
+.TempIdDet_Body_Lw
+{
+	
+	position:relative;
+	height:400px;
+	height:auto;
+	
+}
+.TempIdDet_Footer_Up
+{
+	position:relative;
+height:30px;
+
+	
+}
+.TempIdDet_Footer_Lw
+{
+	position:relative;
+	height:35px;
+	 background-color: ButtonFace;
+
+}
+.TempIdDet_Up_Left
+{
+	position: relative;
+    
+    height: 45px;
+    float: left;
+   
+}
+
+.abs_TempIdDet_Controls
+{
+	 position:absolute;
+     top:5px;
+
+}
+
+.Up_Footer_Left
+{
+	position:relative;
+	float:left;
+	
+	width:200px;
+}
+.Up_Footer_Right
+{
+	position:relative;
+	float:right;
+	width:580px;
+}
+
+
+.TempIdDet_SelEmpLabel
+{
+	height:20px;
+	width:500px;
+	float:left;
+}
+.TempIdDet_SelEmpList
+{
+position:relative;
+	height:50px;
+	float:left;
+	width:500px;
+
+}
+.Ab_Left_Lbl
+{
+    font: 14px  Mukta-ExtraLight !important;
+	left:20px;
+	height: 14px;
+}
+.Ab_Right_Lbl
+{
+	left:150px;
+}
+.Ab_Right_Lbl_Rfv
+{
+    font: 14px  Mukta-ExtraLight !important;
+	left:150px;
+}
+.Ab_Grid_Add_New
+{
+	 left:700px;
+}
+.rfvTxtBx
+{
+	left:360px;
+}
+.Grid_Header_Forecr
+{
+	color:Black;
+	 
+}
+.FootrBg
+{
+    height: 30px;
+    position:relative;
+     
+}
+
+
+/******************Task.aspx******************/
+
+
+    .content10
+    {
+      	   position:relative;
+            margin:auto;
+ 	        width:900px;
+         	height:auto;
+            background-color:#D8D8D8;
+            overflow :hidden;
+            
+            font-size :14px;
+               
+            
+
+}
+    .content11
+    {
+    	position:relative;
+    	height:30px;
+    	font-size:20px;
+    	
+    	
+    }
+    .content12
+    {
+    	position:relative;
+    	margin-left:10px;
+    	width:200px;
+    	float:left;
+    	min-height:25px;
+    	margin-top:5px;
+    
+    	
+    }
+    .content13
+    {
+    	position:relative;
+    	width:525px;
+    	min-height:25px;
+        float:left;
+        margin-top:5px;
+    	
+    }
+    .c1
+    {
+    	color:Red;
+    }
+    .classRadWindow
+        
+     {
+	    position:relative;
+	    background-color: #BDBDBD;
+     }
+         
+     .cld_logo{
+    width: 180px;
+    height: 36px;
+}
+
+.cld_header_logo{ /*Header Logo*/
+    float: left;
+    height: 100px;
+    width: 220px;
+    background-color: #DA1A32;
+    position: absolute;
+    top: 0px;
+    padding: 35px 0px;
+    z-index: 4;
+    cursor: pointer;
+    text-align: center;
+}
+    
+.cld_header_logo_small a[href="Home.aspx"] { /*Header Logo for nonhome page*/
+    float: left;
+    height: 67px;
+    width: 210px;
+    background-color: #DA1A32;
+    position: absolute;
+    top: 3px;
+    padding-top: 20px;
+    padding-left: 15px;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.cld_header_logo a,
+.cld_header_logo a:active,
+.cld_header_logo a:hover,
+.cld_header_logo a:focus{ /*Header logo link*/
+    /*border: none;
+    text-decoration: none;
+    display: inline-block;*/
+}
+
+.cld_header_logo_small a,
+.cld_header_logo_small a:active,
+.cld_header_logo_small a:hover,
+.cld_header_logo_small a:focus{ /*Header logo link*/
+    /*border: none;
+    text-decoration: none;*/
+}
+
+.cld_header_logo_small_career a,
+.cld_header_logo_small_career a:active,
+.cld_header_logo_small_career a:hover,
+.cld_header_logo_small_career a:focus{ /*Header logo link*/
+    /*border: none;
+    text-decoration: none;*/
+}
+
+.cld_header_logo::after { /*Header logo slanted*/
+    content: "";
+    background: #DA1A32;
+    height: 40px;
+    transform: skewY(-8deg);
+    -webkit-transform: skewY(-8deg);
+    -moz-transform: skewY(-8deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+}
+
+.cld_header_logo_small a[href="Home.aspx"]::after { /*Header logo slanted*/
+    content: "";
+    background: #DA1A32;
+    height: 40px;
+    transform: skewY(-8deg);
+    -webkit-transform: skewY(-8deg);
+    -moz-transform: skewY(-8deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+}
+
+.cld_header_logo::after { /*Header logo slanted*/
+    bottom: -15px;
+}
+
+.cld_header_logo_small a[href="Home.aspx"]::after { /*Header logo slanted*/
+    bottom: -21px;
+}
+
+.cld_header_logo span{
+    display: block;
+    color: #fff;
+    font-size: 41px;
+}
+.cld_header_logo_small span{
+    display: block;
+    color: #fff;
+    font-size: 41px;
+}
+.cld_active_header{ /*header container*/
+	padding: 25px 25px 20px 25px;
+	overflow: hidden;;
+}
+
+.cld_active_header_logo{
+	float: left;
+}
+
+.cld_active_header_logo img{/*header logo img*/
+	width: 220px;
+	height: 100px;
+}
+
+.cld_active_logout_section{ /*logout section container*/
+	float: right;
+	position: relative;
+}
+
+.cld_active_logout_section span{
+	display: block;
+}
+
+span.cld_active_logout_name{
+	font-weight: bold;
+}
+
+span.cld_active_logout_text{
+	color: #009BEA;
+	cursor: pointer;
+}
+.cld_header_list{
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-top: 34px;
+    padding-bottom: 0px;
+    cursor: pointer;
+}
+.cld_header_active {
+    color: #DA1A32 !important;
+}
+
+
+.panel.with-nav-tabs .panel-heading{
+    padding: 5px 5px 0 5px;
+}
+.panel.with-nav-tabs .nav-tabs{
+	border-bottom: none;
+}
+.panel.with-nav-tabs .nav-justified{
+	margin-bottom: -1px;
+}
+/********************************************************************/
+/*** PANEL DEFAULT ***/
+.with-nav-tabs.panel-default .nav-tabs > li > a,
+.with-nav-tabs.panel-default .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li > a:focus {
+    color: #777;
+}
+.with-nav-tabs.panel-default .nav-tabs > .open > a,
+.with-nav-tabs.panel-default .nav-tabs > .open > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > .open > a:focus,
+.with-nav-tabs.panel-default .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li > a:focus {
+    color: #777;
+	background-color: #ddd;
+	border-color: transparent;
+}
+.with-nav-tabs.panel-default .nav-tabs > li.active > a,
+.with-nav-tabs.panel-default .nav-tabs > li.active > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li.active > a:focus {
+	color: #555;
+	background-color: #fff;
+	border-color: #ddd;
+	border-bottom-color: transparent;
+}
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu {
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a {
+    color: #777;   
+}
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
+    background-color: #ddd;
+}
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > .active > a,
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > .active > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #555;
+}
+/********************************************************************/
+/*** PANEL PRIMARY ***/
+.with-nav-tabs.panel-primary .nav-tabs > li > a,
+.with-nav-tabs.panel-primary .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-primary .nav-tabs > li > a:focus {
+    color: #fff;
+}
+.with-nav-tabs.panel-primary .nav-tabs > .open > a,
+.with-nav-tabs.panel-primary .nav-tabs > .open > a:hover,
+.with-nav-tabs.panel-primary .nav-tabs > .open > a:focus,
+.with-nav-tabs.panel-primary .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-primary .nav-tabs > li > a:focus {
+	color: #fff;
+	background-color: #3071a9;
+	border-color: transparent;
+}
+.with-nav-tabs.panel-primary .nav-tabs > li.active > a,
+.with-nav-tabs.panel-primary .nav-tabs > li.active > a:hover,
+.with-nav-tabs.panel-primary .nav-tabs > li.active > a:focus {
+	color: #428bca;
+	background-color: #fff;
+	border-color: #428bca;
+	border-bottom-color: transparent;
+}
+.with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu {
+    background-color: #428bca;
+    border-color: #3071a9;
+}
+.with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > li > a {
+    color: #fff;   
+}
+.with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
+.with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
+    background-color: #3071a9;
+}
+.with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > .active > a,
+.with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > .active > a:hover,
+.with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
+    background-color: #4a9fe9;
+}
+/********************************************************************/
+/*** PANEL SUCCESS ***/
+.with-nav-tabs.panel-success .nav-tabs > li > a,
+.with-nav-tabs.panel-success .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-success .nav-tabs > li > a:focus {
+	color: #3c763d;
+}
+.with-nav-tabs.panel-success .nav-tabs > .open > a,
+.with-nav-tabs.panel-success .nav-tabs > .open > a:hover,
+.with-nav-tabs.panel-success .nav-tabs > .open > a:focus,
+.with-nav-tabs.panel-success .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-success .nav-tabs > li > a:focus {
+	color: #3c763d;
+	background-color: #d6e9c6;
+	border-color: transparent;
+}
+.with-nav-tabs.panel-success .nav-tabs > li.active > a,
+.with-nav-tabs.panel-success .nav-tabs > li.active > a:hover,
+.with-nav-tabs.panel-success .nav-tabs > li.active > a:focus {
+	color: #3c763d;
+	background-color: #fff;
+	border-color: #d6e9c6;
+	border-bottom-color: transparent;
+}
+.with-nav-tabs.panel-success .nav-tabs > li.dropdown .dropdown-menu {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.with-nav-tabs.panel-success .nav-tabs > li.dropdown .dropdown-menu > li > a {
+    color: #3c763d;   
+}
+.with-nav-tabs.panel-success .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
+.with-nav-tabs.panel-success .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
+    background-color: #d6e9c6;
+}
+.with-nav-tabs.panel-success .nav-tabs > li.dropdown .dropdown-menu > .active > a,
+.with-nav-tabs.panel-success .nav-tabs > li.dropdown .dropdown-menu > .active > a:hover,
+.with-nav-tabs.panel-success .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #3c763d;
+}
+/********************************************************************/
+/*** PANEL INFO ***/
+.with-nav-tabs.panel-info .nav-tabs > li > a,
+.with-nav-tabs.panel-info .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-info .nav-tabs > li > a:focus {
+	color: #31708f;
+}
+.with-nav-tabs.panel-info .nav-tabs > .open > a,
+.with-nav-tabs.panel-info .nav-tabs > .open > a:hover,
+.with-nav-tabs.panel-info .nav-tabs > .open > a:focus,
+.with-nav-tabs.panel-info .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-info .nav-tabs > li > a:focus {
+	color: #31708f;
+	background-color: #bce8f1;
+	border-color: transparent;
+}
+.with-nav-tabs.panel-info .nav-tabs > li.active > a,
+.with-nav-tabs.panel-info .nav-tabs > li.active > a:hover,
+.with-nav-tabs.panel-info .nav-tabs > li.active > a:focus {
+	color: #31708f;
+	background-color: #fff;
+	border-color: #bce8f1;
+	border-bottom-color: transparent;
+}
+.with-nav-tabs.panel-info .nav-tabs > li.dropdown .dropdown-menu {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+.with-nav-tabs.panel-info .nav-tabs > li.dropdown .dropdown-menu > li > a {
+    color: #31708f;   
+}
+.with-nav-tabs.panel-info .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
+.with-nav-tabs.panel-info .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
+    background-color: #bce8f1;
+}
+.with-nav-tabs.panel-info .nav-tabs > li.dropdown .dropdown-menu > .active > a,
+.with-nav-tabs.panel-info .nav-tabs > li.dropdown .dropdown-menu > .active > a:hover,
+.with-nav-tabs.panel-info .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #31708f;
+}
+/********************************************************************/
+/*** PANEL WARNING ***/
+.with-nav-tabs.panel-warning .nav-tabs > li > a,
+.with-nav-tabs.panel-warning .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-warning .nav-tabs > li > a:focus {
+	color: #8a6d3b;
+}
+.with-nav-tabs.panel-warning .nav-tabs > .open > a,
+.with-nav-tabs.panel-warning .nav-tabs > .open > a:hover,
+.with-nav-tabs.panel-warning .nav-tabs > .open > a:focus,
+.with-nav-tabs.panel-warning .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-warning .nav-tabs > li > a:focus {
+	color: #8a6d3b;
+	background-color: #faebcc;
+	border-color: transparent;
+}
+.with-nav-tabs.panel-warning .nav-tabs > li.active > a,
+.with-nav-tabs.panel-warning .nav-tabs > li.active > a:hover,
+.with-nav-tabs.panel-warning .nav-tabs > li.active > a:focus {
+	color: #8a6d3b;
+	background-color: #fff;
+	border-color: #faebcc;
+	border-bottom-color: transparent;
+}
+.with-nav-tabs.panel-warning .nav-tabs > li.dropdown .dropdown-menu {
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+.with-nav-tabs.panel-warning .nav-tabs > li.dropdown .dropdown-menu > li > a {
+    color: #8a6d3b; 
+}
+.with-nav-tabs.panel-warning .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
+.with-nav-tabs.panel-warning .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
+    background-color: #faebcc;
+}
+.with-nav-tabs.panel-warning .nav-tabs > li.dropdown .dropdown-menu > .active > a,
+.with-nav-tabs.panel-warning .nav-tabs > li.dropdown .dropdown-menu > .active > a:hover,
+.with-nav-tabs.panel-warning .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #8a6d3b;
+}
+/********************************************************************/
+/*** PANEL DANGER ***/
+.with-nav-tabs.panel-danger .nav-tabs > li > a,
+.with-nav-tabs.panel-danger .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-danger .nav-tabs > li > a:focus {
+	color: #a94442;
+}
+.with-nav-tabs.panel-danger .nav-tabs > .open > a,
+.with-nav-tabs.panel-danger .nav-tabs > .open > a:hover,
+.with-nav-tabs.panel-danger .nav-tabs > .open > a:focus,
+.with-nav-tabs.panel-danger .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-danger .nav-tabs > li > a:focus {
+	color: #a94442;
+	background-color: #ebccd1;
+	border-color: transparent;
+}
+.with-nav-tabs.panel-danger .nav-tabs > li.active > a,
+.with-nav-tabs.panel-danger .nav-tabs > li.active > a:hover,
+.with-nav-tabs.panel-danger .nav-tabs > li.active > a:focus {
+	color: #a94442;
+	background-color: #fff;
+	border-color: #ebccd1;
+	border-bottom-color: transparent;
+}
+.with-nav-tabs.panel-danger .nav-tabs > li.dropdown .dropdown-menu {
+    background-color: #f2dede; /* bg color */
+    border-color: #ebccd1; /* border color */
+}
+.with-nav-tabs.panel-danger .nav-tabs > li.dropdown .dropdown-menu > li > a {
+    color: #a94442; /* normal text color */  
+}
+.with-nav-tabs.panel-danger .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
+.with-nav-tabs.panel-danger .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
+    background-color: #ebccd1; /* hover bg color */
+}
+.with-nav-tabs.panel-danger .nav-tabs > li.dropdown .dropdown-menu > .active > a,
+.with-nav-tabs.panel-danger .nav-tabs > li.dropdown .dropdown-menu > .active > a:hover,
+.with-nav-tabs.panel-danger .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
+    color: #fff; /* active text color */
+    background-color: #a94442; /* active bg color */
+}

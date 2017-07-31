@@ -1,0 +1,1541 @@
+﻿body {
+    font: 14px Mukta-ExtraLight !important;
+}
+
+.RadMenu .rmVertical .rmText, .RadMenu .rmHorizontal .rmVertical .rmText {
+    background-color: white;
+    float: left;
+    /*margin-top:6px;*/
+}
+
+.rgMasterTable {
+    width: 96%;
+}
+
+.rmLink:hover {
+    color: red !important;
+}
+
+.main {
+    width: 940px;
+    height: auto;
+    margin: 0 auto;
+    /*;border		:1px solid black*/
+}
+
+.divHead {
+    width: 940px;
+    height: 150px;
+    position: relative;
+    /*;border		:1px solid black*/
+}
+
+.divLogo {
+    height: 85px;
+    width: auto;
+    position: relative;
+    /*;border		:1px solid red*/
+}
+
+.divMenu {
+    /*text-align:left;*/
+    height: 40px;
+    width: auto;
+    position: relative;
+    margin-top: -40px;
+    margin-left: 222px;
+    background-color: white;
+    /*;border		:1px solid green*/
+}
+
+#ctl00_pnlName {
+    margin-top: 0px !important;
+}
+
+.divFooter {
+    height: 5px;
+    width: 940px;
+    position: relative;
+    /*;margin-top	:0px !important;*/
+    /*;border		:1px solid black*/
+}
+
+.footerDiv {
+    margin-top: 5px !important;
+    position: relative;
+    float: left;
+}
+
+.divMenuFootend {
+    height: 40px;
+    width: 11px;
+    position: relative;
+    float: left;
+}
+
+.divMenuFootmid {
+    height: 40px;
+    width: 918px;
+    position: relative;
+    float: left;
+}
+
+.divFoot {
+    font-family: Mukta-ExtraLight;
+    font-size: 14px;
+    ;
+    text-align: center
+    /*;height: 10px*/
+    ;
+    margin: auto;
+    position: relative;
+    width: 940px;
+}
+/*#ctl00_ContentPlaceHolder1_pnlMainContent {
+margin-top:-24px !important;
+}
+#ctl00_ContentPlaceHolder1_AttendenceDetail_pnlMain {
+    height:126px !important;
+}
+#ctl00_ContentPlaceHolder1_AttendenceDetail_divAttdtl {
+font-family:'Mukta-ExtraLight';
+    font-size:14px;
+    margin-left:15px !important;
+    font-weight:bolder;
+}*/
+/*.rbtnSelectStyle {
+    margin-top:4px !important;
+    font-family:'Mukta-ExtraLight';
+    font-size:14px;
+}*/
+.divlblHeader {
+    /*margin-top:24px;*/
+    font: 18px Mukta-ExtraLight !important;
+    font-weight: bolder;
+    background-color: #333E48;
+    text-align: left;
+    position: relative;
+    margin: 2px 0px 0px 0px;
+    line-height: 25px !important;
+}
+/*.divSelectEmployee {
+top:5px;
+float:left;
+position:relative;
+}
+.rtxtFromStyle {
+    margin-left:30px !important;
+    margin-top:10px;
+    width:125px !important;
+}
+.rcbxEmployeeStyle
+{
+    position: relative;
+    margin: 0px 0px 0px 20px;
+    float:left;
+    font-style: normal !important;
+}
+/*#ctl00_ContentPlaceHolder1_LeaveApproval_rcbxLeaveType {
+    margin-top:6px;
+}*/
+/*#ctl00_ContentPlaceHolder1_LeaveApproval_lblLeave {
+margin-left:30px;
+}*/
+/*#ctl00_ContentPlaceHolder1_LeaveApproval_rcbxStatus {
+margin-left:30px;
+}*/
+/*#rcbxLeaveType {
+margin-left:30px !important;
+}*/
+/*.divPickerLabel {
+
+    background-color:#F1F1F3;
+font-family:'Mukta-ExtraLight';
+    font-size:14px;
+
+}*/
+
+/*#ctl00_ContentPlaceHolder1_AttendenceDetail_rbtnSelect {
+    margin-left:30px;
+    width:90px !important;
+}*/
+
+.divAttdtl {
+    font-family: 'Mukta-ExtraLight';
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.radMenu {
+    /*position:fixed;*/
+    height: 40px;
+    width: 50px !important;
+    color: red;
+    /*;border	:1px solid black*/
+}
+
+.cld_logo {
+    width: 180px;
+    height: 36px;
+}
+
+#ctl00_ContentPlaceHolder1_AttendenceDetail_lblAttendenceDetaisFrom {
+    margin-left: 14px !important;
+}
+
+#ctl00_ContentPlaceHolder1_AttendenceDetail_lnkbtnNxt {
+    left: 550px !important;
+}
+
+#ctl00_ContentPlaceHolder1_AttendenceDetail_lnkbtnPre {
+    left: 550px !important;
+}
+
+.cld_inner_header {
+    height: 73px;
+}
+
+.cld_inner_header .cld_header {
+    padding-top: 9px;
+}
+
+.cld_main_select option:hover {
+    outline: none;
+    background: red;
+}
+
+.cld_header { /*Header */
+    max-width: 100%;
+    padding: 0px 15px;
+    /* padding-left: 23px; */
+    margin: auto;
+    padding-top: 35px;
+    position: relative;
+}
+
+.cld_logo {
+    width: 180px;
+    height: 36px;
+}
+
+.cld_header_logo { /*Header Logo*/
+    float: left;
+    height: 100px;
+    width: 220px;
+    background-color: #DA1A32;
+    position: absolute;
+    top: 0px;
+    padding: 35px 0px;
+    z-index: 4;
+    cursor: pointer;
+    text-align: center;
+}
+
+.cld_header_logo_small a[href="index.html"] { /*Header Logo for nonhome page*/
+    float: left;
+    height: 67px;
+    width: 210px;
+    background-color: #DA1A32;
+    position: absolute;
+    top: 0px;
+    padding-top: 20px;
+    padding-left: 15px;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.cld_header_logo a,
+.cld_header_logo a:active,
+.cld_header_logo a:hover,
+.cld_header_logo a:focus { /*Header logo link*/
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cld_header_logo_small a,
+.cld_header_logo_small a:active,
+.cld_header_logo_small a:hover,
+.cld_header_logo_small a:focus { /*Header logo link*/
+    border: none;
+    text-decoration: none;
+}
+
+.cld_header_logo_small_career a,
+.cld_header_logo_small_career a:active,
+.cld_header_logo_small_career a:hover,
+.cld_header_logo_small_career a:focus { /*Header logo link*/
+    border: none;
+    text-decoration: none;
+}
+
+.cld_header_logo::after { /*Header logo slanted*/
+    content: "";
+    background: #DA1A32;
+    height: 40px;
+    transform: skewY(-8deg);
+    -webkit-transform: skewY(-8deg);
+    -moz-transform: skewY(-8deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+}
+
+.cld_header_logo_small a[href="index.html"]::after { /*Header logo slanted*/
+    content: "";
+    background: #DA1A32;
+    height: 40px;
+    transform: skewY(-8deg);
+    -webkit-transform: skewY(-8deg);
+    -moz-transform: skewY(-8deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+}
+
+.cld_header_logo::after { /*Header logo slanted*/
+    bottom: -15px;
+}
+
+.cld_header_logo_small a[href="index.html"]::after { /*Header logo slanted*/
+    bottom: -21px;
+}
+
+
+
+
+
+
+body {
+}
+
+
+.divMainContent {
+    position: relative;
+    height: auto;
+    width: auto;
+}
+
+.divPickerLabel {
+    font-family: 'Mukta-ExtraLight';
+    font-size: 14px;
+    position: relative;
+    height: 20px;
+    background-color: #f1f1f3;
+    /*background:#f1f1f3;*/
+    margin-left: 10px !important;
+}
+
+.divlegend {
+    position: relative;
+    margin: 20px 0px 0px 0px;
+}
+
+.divPicker {
+    position: relative;
+    margin: 10px 0px 0px 0px;
+}
+
+.divfromdatetodatelbl {
+    position: relative;
+    height: 20px;
+}
+
+.divlblfromdatetodate {
+    position: relative;
+    margin: 20px 0px 0px 20px;
+}
+
+.divDummy {
+    height: 10px;
+    margin: -3px;
+}
+
+.Header_Title_BG {
+    color: white;
+    background-color: #333E48 !important;
+}
+/*.divrGrid
+{
+    position: relative;
+    margin: 0px 0px 0px 0px;
+   
+}*/
+.divPopup {
+    width: 684px;
+    height: 434px;
+    background-color: #F1F1F3;
+    vertical-align: top;
+    margin-top: 0px !important;
+    border: 2px solid;
+    border-radius: 0px;
+}
+
+.divClose {
+    position: relative;
+    margin: 8px 0px 0px 622px;
+}
+
+.divlblAttendenceDetails {
+    font-family: 'Mukta-ExtraLight';
+    font-size: 18px;
+    font-weight: bolder;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+.divDate {
+    position: relative;
+    margin: 20px 0px 0px 50px;
+}
+
+.divEmplyeeDetail {
+    position: relative;
+    margin: 70px 0px 0px 50px;
+}
+
+.divGrid {
+    position: relative;
+    width: 562px;
+    margin: 20px 0px 0px 50px;
+}
+
+.divControls {
+    height: 60px;
+    margin: 15px 0 0 50px;
+    position: relative;
+}
+
+.divcontainer {
+    font-family: Mukta-ExtraLight;
+    font-size: 14px;
+    float: left;
+    width: 105px;
+    height: 60px;
+    position: relative;
+}
+
+.divbtn {
+    position: relative;
+    margin: 40px 0px 0px 250px;
+}
+
+.lblValueStyle {
+    margin: 0px 0px 0px 0px; /*font	:12px Arial,Helvetica,sans-serif;*/
+}
+
+.lblDetails {
+    margin: 0px 0px 0px 0px;
+    /*font: bold 11px Arial,Helvetica,sans-serif;*/
+}
+
+
+.rtbxCommentsStyle {
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+}
+
+.rcbxTypeStyle {
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+}
+
+.divFromDate {
+    font-family: 'Mukta-ExtraLight' !important;
+    font-size: 14px !important;
+    position: relative;
+    float: left;
+    margin: 15px 0px 0px 20px;
+}
+
+.rtxtFromStyle {
+    position: relative;
+    margin: 0px 0px 0px 20px;
+    float: left;
+}
+
+.divSelectEmployee {
+    font-family: 'Mukta-ExtraLight';
+    position: relative;
+    float: left;
+    margin: 15px 0px 0px 28px;
+    height: auto;
+}
+
+.rcbxEmployeeStyle {
+    position: relative;
+    margin: 0px 0px 0px 20px;
+    float: left;
+    font-family: 'Mukta-ExtraLight';
+}
+
+.divLeaveEmployee {
+    position: relative;
+    float: left;
+    margin: 15px 0px 0px 28px;
+}
+
+.rcbxSelectEmployeeStyle {
+    position: relative;
+    float: left;
+    margin: 0px 0px 0px 20px;
+}
+
+.divbtnSelect {
+    position: relative;
+}
+
+.radbutton,
+.CSButton,
+.RadButton_Default,
+.rbSkinnedButton {
+    font-family: Mukta-ExtraLight;
+    font-size: 14px;
+    position: relative;
+    float: left;
+    margin: 14px 0px 0px 28px;
+    height: 23px;
+}
+
+.RadGridStyle {
+    width: auto !important;
+    height: auto;
+}
+
+.rgLeaveApproval {
+    height: auto;
+    position: relative;
+    width: auto !important;
+}
+
+.lblLegendStyle {
+    margin: 0px 0px 0px 5px;
+    text-align: center;
+    /*font: bold 13px Arial,Helvetica,sans-serif;*/
+}
+
+.divlblLeaveApproval {
+    font-family: Mukta-ExtraLight;
+    font-size: 16px;
+    font-weight: bolder;
+    position: relative;
+    margin: 0px 0px 0px 250px;
+}
+
+
+.divLeaveComments {
+    position: relative;
+    margin: 10px 0px 0px 50px;
+    height: 60px;
+}
+
+.divlblEmpHeader {
+    position: relative;
+    margin: 2px 0px 0px 380px;
+    /*font-size: large;
+    font-weight: bold;*/
+}
+
+.divEmployeeDtls {
+    position: relative;
+    float: left;
+}
+
+.divImage {
+    position: relative;
+    margin: 0px 0px 0px 600px;
+    height: 180px;
+    width: 150px;
+    cursor: pointer;
+    background-color: #DBEEF3;
+}
+
+.divDummyimage {
+    position: relative;
+    height: 100px;
+    margin: 0px 0px 0px 600px;
+}
+
+.divEmployeelbltxtbtn {
+    position: relative;
+    height: 150px;
+}
+
+.divMSIId {
+    position: relative;
+    margin: 15px 0px 0px 20px;
+}
+
+.divEmployeeName {
+    position: relative;
+    margin: 15px 0px 0px 0px;
+}
+
+.divEmployeeLastName {
+    position: relative;
+    margin: 15px 0px 0px 0px;
+}
+
+.divbtnApplyFilter {
+    position: relative;
+    margin: 0px 0px 0px 20px;
+}
+
+.rcbxMSIIdStyle {
+    position: absolute;
+    top: 0px;
+    left: 120px;
+}
+
+.rtxtMSIIdStyle {
+    position: absolute;
+    top: 0px;
+    left: 140px;
+}
+
+.lnkPictureStyle {
+    margin-top: 10px;
+    /*font: bold 11px Arial,Helvetica,sans-serif;*/
+}
+
+.lblTxtHeaderEditor {
+    width: 153px;
+    /*font: bold 11px Arial,Helvetica,sans-serif;*/
+}
+
+
+
+
+
+/*css inline site master*/
+
+.RadMenu .rmVertical .rmText, .RadMenu .rmHorizontal .rmVertical .rmText {
+    background-color: white;
+    float: left;
+}
+/*.RadMenu_Internal .rmRootGroup a.rmLink:hover, .RadMenu_Internal .rmRootGroup .rmFocused, .RadMenu_Internal .rmRootGroup .rmExpanded .RadMenu_Internal .rmRootGroup .rmSelected {
+                background:none !important;
+                color:red !important;
+            }*/
+
+/* selected link */
+/*a.rmLink.rmRootlink:hover {
+            color: red !important;
+        }*/
+
+/*.rmLink rmRootLink {
+            background-image:none !important;
+        }*/
+.rmRootGroup rmHorizontal {
+    background-image: none !important;
+}
+
+.RadMenu_Internal .rmRootGroup .rmVertical .rmSeparator {
+    /*background-color: black;*/
+    background-repeat: repeat-x !important;
+    font-size: 0;
+    line-height: 39px;
+    overflow: auto;
+    padding: 0;
+}
+
+a.rmLink :hover {
+    color: red !important;
+}
+
+.RadMenu {
+    white-space: nowrap;
+    margin-left: 240px;
+    top: -50px;
+    float: left;
+    width: 100px !important;
+}
+/*#ctl00_ContentPlaceHolder1_LeaveApproval_pnlmain {
+        background:#f1f1f3;
+        margin-top:10px !important;
+        }*/
+#ctl00_ContentPlaceHolder1_AttendenceDetail_pnlMain {
+    margin-top: -44px;
+    /*height:158px !important;*/
+}
+
+#ctl00_ContentPlaceHolder1_pnlMainContent {
+    background: #f1f1f3;
+}
+
+#ctl00_ContentPlaceHolder1_AttendenceDetail_pnlout {
+    /*background-color:red;*/
+}
+
+#ctl00_ContentPlaceHolder1_AttendenceDetail_lblHeader {
+    font: 18px Mukta-ExtraLight !important;
+    margin-left: -808px !important;
+    line-height: 25px !important;
+    /*background-color:#333E48 !important;*/
+}
+
+#ctl00_ContentPlaceHolder1_LeaveDetail_pnlmain {
+    margin-top: 0px !important;
+}
+
+.RadGrid_Internal .rgRow td {
+    font: 14px Mukta-ExtraLight !important;
+}
+
+.RadGrid_Internal .rgAltRow td {
+    font: 14px Mukta-ExtraLight !important;
+}
+
+#ctl00_ContentPlaceHolder1_AttendenceDetail_lblFromDate {
+    font: 14px Mukta-ExtraLight !important;
+    margin-left: 0px !important;
+    top: 3px !important;
+}
+
+#ctl00_ContentPlaceHolder1_LeaveDetail_pnlout {
+    background-color: #f1f1f3;
+}
+
+#ctl00_ContentPlaceHolder1_ctl00_ContentPlaceHolder1_pnlAllContentPanel {
+    margin-top: -52px;
+}
+
+.divrGrid {
+    background: #f1f1f3;
+}
+
+/*.lblHeader {
+            font:  18px  Mukta-ExtraLight !important;
+        margin-left:-835px;
+        }*/
+
+.cld_header_logo_small a[href="Home.aspx"] { /*Header Logo for nonhome page*/
+    float: left;
+    height: 67px;
+    width: 210px;
+    background-color: #DA1A32;
+    position: absolute;
+    top: 3px;
+    padding-top: 20px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+#ctl00_ContentPlaceHolder1_pnlnew {
+    top: -52px;
+}
+
+#ctl00_pnlName {
+    margin-top: 3px !important;
+}
+
+/*.rmText li:hover{         
+            background-color:white !important;
+        }
+        .rmItem rmFirst li:hover {
+        background-color:white !important;
+        }
+        .rmItem rmLast li:hover{
+        background-color:white !important;
+        }
+
+       
+        /*.rmSlide li:hover{
+            width:198px !important; 
+        }*/
+/*.rmVertical rmGroup rmLevel1 {
+        width:180px;
+        }*/
+
+.style1 {
+    margin-left: 29px;
+    width: 200px !important;
+    white-space: normal;
+}
+/*#ctl00_ContentPlaceHolder1_AttendenceDetail_pnlMain {
+        height:144px !important;
+        }*/
+
+/*#ctl00_ContentPlaceHolder1_LeaveDetail_pnlmain {
+        margin-top:50px !important;
+        }*/
+
+.cld_header_logo_small a[href="Home.aspx"]::after { /*Header logo slanted*/
+    bottom: -21px;
+}
+
+/*rmLeftImage*/
+/*.a.rmLink.rmRootLink{
+        width:200px !important;
+        }*/
+.RadMenu .rmVertical .rmItem .rmText {
+    text-align: left;
+    width: 250px !important;
+}
+
+#ctl00_ContentPlaceHolder1_rgRhlist {
+    width: 940px !important;
+}
+
+#ctl00_ContentPlaceHolder1_lblHeader {
+    font: 18px Mukta-ExtraLight !important;
+    margin-left: 20px !important;
+}
+
+#ctl00_ContentPlaceHolder1_lblHdr {
+    font-family: Mukta-ExtraLight;
+    font-size: 18px !important;
+    margin-left: 8px !important;
+}
+
+
+#ctl00_ContentPlaceHolder1_Leavesummary_tblBalance {
+    width: 188px !important;
+}
+
+#ctl00_ContentPlaceHolder1_LeaveApproval_rwdLeaveApproval_C_Leavesummary_tblBalance {
+    width: 148px !important;
+}
+
+#ctl00_ContentPlaceHolder1_LeaveApproval_rwdLeaveApproval_C_Leavesummary_Label11 {
+    left: 4px !important;
+}
+
+#ctl00_ContentPlaceHolder1_LeaveApproval_rwdLeaveApproval_C_Leavesummary_Label13 {
+    left: 1px !important;
+}
+
+#ctl00_ContentPlaceHolder1_rtsEmployeeDetails {
+    background-color: #333E48 !important;
+}
+
+#ctl00_ContentPlaceHolder1_AttendenceDetail_divAttdtl {
+    margin-top: 40px !important;
+    margin-left: 0px !important;
+}
+
+/*#ctl00_ctl00_pnlName {
+    margin-top:0px;
+    }*/
+#ctl00_rdMenu1 {
+    font-family: Mukta-ExtraLight;
+    font-size: 14px;
+    margin-top: 56px !important;
+    margin-left: 0px;
+    width: 605px !important;
+    background-color: white !important;
+}
+
+
+
+.divContainer {
+    width: 940px;
+    Height: Auto;
+    position: relative;
+    background-color: #F0F0F0;
+    /*;Border	:Solid 1px red*/
+}
+
+.divEditContainer {
+    font-family: Mukta-ExtraLight;
+    font-size: 14px;
+    position: relative;
+    width: 940px;
+    Height: 40px;
+    /*;Border	:Solid 1px red*/
+}
+
+.divLblTxtBtnContainer {
+    font-family: Mukta-ExtraLight !important;
+    font-size: 14px;
+    position: Relative;
+    height: 40px;
+    float: left;
+    /*;Border		:Solid 1px black*/
+}
+
+.Imgbtn {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    Margin-top: 20px;
+    float: left;
+}
+
+.RadInput RadInput_Default {
+    font-family: Mukta-ExtraLight !important;
+    font-size: 14px;
+}
+
+.lblTxtHeaderEditersum {
+    font-family: Mukta-ExtraLight !important;
+    font-size: 16px;
+    top: -5px;
+}
+
+.lblTxtHeaderEditer {
+    font-family: Mukta-ExtraLight !important;
+    font-size: 14px;
+    width: 153px;
+    Position: Absolute;
+    Margin-top: 7px;
+    /*;font: bold 11px Arial,Helvetica,sans-serif;*/
+    /*;Border	:Solid 1px black*/
+}
+
+
+.RadTreeView .rtIn {
+    font-family: Mukta-ExtraLight !important;
+    font-size: 16px;
+    margin-left: -660px !important;
+}
+
+
+
+
+.Content_Container {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.TempIdDet_Header_Body_Footer_Pos {
+    font: 14px Mukta-ExtraLight !important;
+    width: 940px !important;
+    position: relative;
+    height: auto;
+}
+
+
+.TempIdDet_HeaderTab {
+    height: 30px;
+    background-color: ButtonFace;
+}
+
+.TempIdDet_Body_Up {
+    position: relative;
+    height: 100px;
+}
+
+.TempIdDet_Body_Lw {
+    position: relative;
+    height: 400px;
+    height: auto;
+}
+
+.TempIdDet_Footer_Up {
+    position: relative;
+    height: 30px;
+}
+
+.TempIdDet_Footer_Lw {
+    position: relative;
+    height: 35px;
+    background-color: ButtonFace;
+}
+
+.TempIdDet_Up_Left {
+    position: relative;
+    height: 45px;
+    float: left;
+}
+
+.abs_TempIdDet_Controls {
+    position: absolute;
+    top: 5px;
+}
+
+
+.RadGrid_Internal .rgHeader, .RadGrid_Internal th.rgResizeCol, .rgMasterTable thead tr th.rgHeader {
+    font: 14px Mukta-ExtraLight !important;
+}
+
+.Up_Footer_Left {
+    position: relative;
+    float: left;
+    width: 200px;
+}
+
+.Up_Footer_Right {
+    position: relative;
+    float: right;
+    width: 580px;
+}
+
+.RadGrid_Internal .rgHeader a {
+    font: 14px Mukta-ExtraLight !important;
+}
+
+.header_Label_Font {
+    font: 18px Mukta-ExtraLight !important;
+    /*font-size: 16px;*/
+    font-weight: bold;
+    position: relative;
+    margin-left: 300px;
+}
+
+.TempIdDet_SelEmpLabel {
+    height: 20px;
+    width: 500px;
+    float: left;
+}
+
+.TempIdDet_SelEmpList {
+    position: relative;
+    height: 50px;
+    float: left;
+    width: 500px;
+}
+
+
+/*#idvft {
+    margin-top: 60px !important;
+}*/
+
+
+/*-----------hms 2---------*/
+
+
+
+.lblHeader {
+    font: 18px Mukta-ExtraLight !important;
+    color: White;
+    margin-left: 12px;
+    font-weight: bold;
+    /*margin-top:0px;
+    line-height:0px !important;*/
+}
+
+.labelInfo {
+    font: bold 11px Arial,Helvetica,sans-serif;
+}
+
+.dataContainer {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+    .dataContainer td {
+        padding-left: 10px;
+        padding-top: 6px;
+    }
+
+.RJButtonContainer {
+    display: inline-block;
+    background-image: url(images/Button.gif);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0 none;
+    height: 22px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    background-position: right 0;
+    padding-right: 4px;
+    vertical-align: top;
+}
+
+#loading {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    display: none;
+    background: #000;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    opacity: 0.75;
+    margin: auto;
+    z-index: 999999999;
+}
+
+.alink {
+    color: #1a0dab;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.deleteIcon {
+    background-image: url(images/closeButton.png);
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.filterLabel {
+    font: bold 11px Arial,Helvetica,sans-serif;
+}
+
+.filter {
+    margin: 10px 0px 10px 5px;
+}
+
+    .filter td {
+        padding-left: 8px;
+        padding-top: 5px;
+    }
+
+.collapse {
+    height: 16px;
+    /* width: 16px; */
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(images/Collapse.png);
+}
+
+.expand {
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(images/expand.png);
+}
+
+.candidateSearchGrid {
+    margin-left: 20px;
+    border-left: 1px solid #b2b2b2;
+    display: inline-table;
+    margin-right: 20px;
+    border-right: 1px solid #b2b2b2;
+}
+
+.recruitmentLink {
+    height: 40px;
+    display: inline-block;
+    border: 1px solid #b2b2b2;
+    background-color: #ddd;
+}
+
+.screening {
+    background-image: url(images/screening.ico);
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+.rjButtonStatus {
+    -moz-box-shadow: inset 0px 0px 14px -3px #f2fadc;
+    -webkit-box-shadow: inset 0px 0px 14px -3px #f2fadc;
+    box-shadow: inset 0px 0px 14px -3px #f2fadc;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dbe6c4), color-stop(1, #9ba892));
+    background: -moz-linear-gradient(top, #dbe6c4 5%, #9ba892 100%);
+    background: -webkit-linear-gradient(top, #dbe6c4 5%, #9ba892 100%);
+    background: -o-linear-gradient(top, #dbe6c4 5%, #9ba892 100%);
+    background: -ms-linear-gradient(top, #dbe6c4 5%, #9ba892 100%);
+    background: linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dbe6c4', endColorstr='#9ba892',GradientType=0);
+    background-color: #dbe6c4;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 6px;
+    border-radius: 3px;
+    border: 1px solid #b2b8ad;
+    display: inline-block;
+    cursor: pointer;
+    color: #3B3B3B;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px 9px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ced9bf;
+}
+
+    .rjButtonStatus:hover {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #9ba892), color-stop(1, #dbe6c4));
+        background: -moz-linear-gradient(top, #9ba892 5%, #dbe6c4 100%);
+        background: -webkit-linear-gradient(top, #9ba892 5%, #dbe6c4 100%);
+        background: -o-linear-gradient(top, #9ba892 5%, #dbe6c4 100%);
+        background: -ms-linear-gradient(top, #9ba892 5%, #dbe6c4 100%);
+        background: linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9ba892', endColorstr='#dbe6c4',GradientType=0);
+        background-color: #9ba892;
+    }
+
+    .rjButtonStatus:active {
+        position: relative;
+        top: 1px;
+    }
+
+.rjButtonCustom {
+    padding: 3px 3px !important;
+}
+
+.node rect {
+    cursor: pointer;
+    fill: #fff;
+    fill-opacity: .5;
+    stroke: #b2b2b2;
+    stroke-width: .5px;
+}
+
+.node text {
+    font: 13px Arial,Helvetica,sans-serif;
+    pointer-events: none;
+}
+
+path.link {
+    fill: none;
+    stroke: #9ecae1;
+    stroke-width: 1.5px;
+}
+
+
+.RJButton {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#bab1ba',GradientType=0);
+    background-color: #ededed;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #d6bcd6;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 3px 3px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #e1e2ed;
+}
+
+    .RJButton:hover {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bab1ba), color-stop(1, #ededed));
+        background: -moz-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+        background: -webkit-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+        background: -o-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+        background: -ms-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+        background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bab1ba', endColorstr='#ededed',GradientType=0);
+        background-color: #bab1ba;
+    }
+
+    .RJButton:active {
+        position: relative;
+        top: 1px;
+    }
+
+
+.candidateRatingTable {
+    border-bottom: 1px solid #848484;
+    border-left: 1px solid #848484;
+    border-right: 1px solid #848484;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.labelHeader {
+    border-top: 0 none !important;
+    background-color: #999999 !important;
+    border-bottom: 1px solid #999999;
+    font-weight: bold;
+    color: black !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    padding-left: 9px;
+    padding-right: 7px;
+    font: bold 11px Arial,Helvetica,sans-serif;
+    width: auto;
+}
+
+.lblRow {
+    background-color: #f1f1f1 !important;
+    cursor: default;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+}
+
+    .lblRow td {
+        padding-top: 4px;
+        padding-bottom: 3px;
+        padding-right: 6px;
+        padding-left: 9px;
+    }
+
+.tableSections {
+    margin: 10px 0px 10px 5px;
+    border-collapse: collapse;
+    padding-left: 9px;
+    border: #b2b2b2 dotted 1px;
+}
+
+/*----------------------report----------------------------------*/
+
+
+
+
+.MainContent {
+    position: relative;
+    width: 800px;
+    margin: auto;
+    margin-top: 10px;
+    /*border		: solid 1px Black;*/
+    height: auto;
+}
+
+.rpt_filter_Container {
+    height: auto;
+    position: relative;
+    width: 800px;
+}
+
+.RptDet_Header_Body_Footer_Pos {
+    position: relative;
+    height: auto;
+}
+
+.RptDet_HeaderTab {
+    height: 30px;
+    position: relative;
+    background-color: ButtonFace;
+}
+
+.header_lbl_Font {
+    font: 14px Mukta-ExtraLight !important;
+    position: absolute;
+    margin: 5px 0px 0px 15px;
+}
+
+
+
+.rpt_controls_container {
+    height: 40px;
+    position: relative;
+    width: 800px;
+}
+
+.rptDet_Up_Left {
+    position: relative;
+    height: 40px;
+    float: left;
+}
+
+.abs_rptDet_Controls {
+    position: absolute;
+    top: 10px;
+    font: 14px Mukta-ExtraLight !important;
+}
+
+.RptDet_Body_Up1 {
+    position: relative;
+    height: 50px;
+}
+
+
+.RptDet_Footer_Lw {
+    position: relative;
+    height: 35px;
+    top: 15px;
+}
+/*.rcbxEmployeeStyle
+{
+    position	: absolute;
+    margin		: 0px 0px 0px 20px;
+    font-style	: normal !important;
+}*/
+.Content_Container {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.RptDet_Up_Left {
+    position: relative;
+    height: 45px;
+    float: left;
+}
+
+#ctl00_ContentPlaceHolder1_Absent_lblRptHeader {
+    margin-left: -808px !important;
+    font: 18px Mukta-ExtraLight !important;
+    color: white;
+}
+
+#ctl00_ContentPlaceHolder1_LopSummary_lblRptHeader {
+    font: 18px Mukta-ExtraLight !important;
+    margin-left: -808px !important;
+    color: white;
+}
+
+#ctl00_ContentPlaceHolder1_rgAbsentSummaryReport_ctl00_ctl02_ctl00_imgBtnPDF {
+    margin-left: 910px !important;
+}
+
+#ctl00_ContentPlaceHolder1_Variance_lblRptHeader {
+    font: 18px Mukta-ExtraLight !important;
+    margin-left: -808px !important;
+    color: white;
+}
+
+#ctl00_ContentPlaceHolder1_Report_lblRptHeader {
+    font: 18px Mukta-ExtraLight !important;
+    margin-left: -808px !important;
+    color: white;
+}
+
+.RptDet_HeaderTab {
+    background-color: #333E48;
+}
+
+.hmsRecruitmentContainer {
+    min-height: 80px;
+    font: 18px Mukta-ExtraLight !important;
+}
+
+.filterLabel {
+    font: 14px Mukta-ExtraLight !important;
+}
+
+.RadTabStripTop_Default .rtsLevel {
+    background-color: #F1F1F3 !important;
+    top:-33px !important;
+}
+
+
+
+.dataContainer {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+    .dataContainer td {
+        padding-left: 10px;
+        padding-top: 6px;
+    }
+
+
+#ctl00_ctl00_rdMenu1 {
+    width: 540px !important;
+    top: 6px !important;
+    margin-left: 10px !important;
+}
+
+.MainContentRep {
+    width: 940px !important;
+    margin-top: -43px !important;
+}
+
+#rgLopSummaryReport {
+    width: 940px !important;
+}
+
+
+#ctl00_ContentPlaceHolder1_LeaveApproval_rwdLeaveApproval_C {
+    background-color: #f1f1f3;
+}
+
+#ctl00_ContentPlaceHolder1_LeaveApproval_rwdLeaveApproval_C_rfvComments {
+    margin: 50px 0px 0px 0px;
+}
+
+#ctl00_ContentPlaceHolder1_LopSummary_pnlEntry {
+    background-color: #F1F1F3;
+}
+
+#ctl00_ContentPlaceHolder1_Absent_pnlEntry {
+    background-color: #F1F1F3;
+}
+
+#ctl00_ContentPlaceHolder1_Variance_pnlEntry {
+    background-color: #F1F1F3;
+}
+
+#ctl00_ContentPlaceHolder1_Report_pnlEntry {
+    background-color: #F1F1F3;
+}
+
+#ctl00_ContentPlaceHolder1_rgLopSummaryReport_ctl00_ctl02_ctl00_imgBtnPDF {
+    margin-left: 910px !important;
+}
+
+
+.filterLabel {
+    font: 16px Mukta-ExtraLight !important;
+}
+
+#ctl00_ContentPlaceHolder1_Leavesummary_Label9 {
+    margin-left: 38px !important;
+}
+
+[data-reactroot] {
+    background-color: #F1F1F3 !important;
+}
+
+#ctl00_ContentPlaceHolder1_AttendenceDetail_rwdAttendenceDetails_C {
+    border: 14px solid #f00;
+}
+
+
+
+.RadGrid_Default {
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+.classRadWindow {
+    position: relative;
+    background-color: #BDBDBD;
+}
+
+.GridColBreakWord {
+    word-wrap: break-word !important;
+}
+
+.RadTabStripTop_Default .rtsLevel {
+    background-color: #F1F1F3;
+     top:-33px !important;
+}
+
+
+#ctl00_ContentPlaceHolder1_rgAttendanceVarReport_ctl00_ctl02_ctl00_imgBtnPDF {
+    margin-left: 910px !important;
+}
+
+.RadTreeView .rtIn {
+    font-family: Mukta-ExtraLight !important;
+    font-size: 14px;
+    margin-left: 0px !important;
+}
+
+.rgCabDetails {
+    font-family: Mukta-ExtraLight !important;
+    font-size: 14px;
+    Height: auto;
+    position: relative;
+}
+/*.abs_Controls
+{
+    position:absolute;
+  top:5px;
+  left:100px !important;
+}
+
+.Ab_Left_Lbl {
+    font: 14px Mukta-ExtraLight !important;
+    left: 25px !important;
+    height: 14px;
+}
+    
+
+.Ab_Right_Lbl {
+    left: 150px !important;
+}*/
+.abs_Controls Ab_Left_Lbl {
+    left: 185px !important;
+}
+
+.labelInfo {
+    font: 16px Mukta extralight !important;
+}
+/*.abs_Controls Ab_Right_Lbl {
+    left:350px !important;
+}*/
