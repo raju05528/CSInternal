@@ -1,76 +1,58 @@
-   <header>
-            <!-- header container starts -->
-            <div class="iko_active_sos_header">                
-                <div class="iko_active_sos_header_logo">
-                    <img src="assets/images/ikogen_logo.png" alt="img">                    
-                </div>
-                <span class="iko_active_sos_country_name">{{countryName}}</span>
-                <div class="iko_active_sos_logout_section">
-                    <img src="assets/images/iko_admin_prof_img.png" alt="img">
-                    <div class="iko_active_sos_logout_container">
-                        <span class="iko_active_sos_logout_name">{{name}}</span>
-                        <span class="iko_active_sos_logout_text" (click)="logout()">Logout</span>
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="header_cont">
+            <header class="cld_inner_header">
+                    <!-- header container starts -->
+                    <div class="cld_header">             
+                            <div class="cld_header_logo_small">
+                                <img src="assets/images/clodium.jpg" alt="img"> 
+                                <div style="float:right">
+                                    <span class="cld_active_logout_name" style="font-size:16px !important;color: #009BEA;">{{name}}</span>
+                                    <span class="cld_active_logout_text" style="font-size:14px;" (click)="logout()">Logout</span>   
+                                </div>                
+                            </div>
+                            <!-- <div class="cld_active_logout_section">
+                                <div class="iko_active_sos_logout_container">
+                                    <span class="cld_active_logout_name" style="font-size:14px;">{{name}}</span>
+                                    <span class="cld_active_logout_text" style="font-size:14px;" (click)="logout()">Logout</span>
+                                </div>
+                            </div> -->
+            
+                        <nav class="navbar navbar-default">
+                            <div class="navbar-header"></div>
+                            <div class="collapse navbar-collapse" id="cld-navbar-collapse">
+                                    <ul class="nav navbar-nav">
+                                        <!-- tab section for admin main page -->
+                                        <li *ngIf="tabAccess1" class="cld_header_desktop" [ngClass]="{ 'active': tab1}">
+                                            <a class="cld_header_list cld_header_active" data-toggle="tab" (click)="onTabClicks(0)">HOME</a>
+                                            
+                                        </li>
+                                        <li *ngIf="tabAccess2" class="cld_header_desktop" [ngClass]="{ 'active': tab2}">
+                                            <a class="cld_header_list" data-toggle="tab" (click)="onTabClicks(1)">PROJECT</a>
+                                            
+                                        </li>
+                                        <li *ngIf="tabAccess3" class="cld_header_desktop" [ngClass]="{ 'active': tab3}">
+                                            <a class="cld_header_list" data-toggle="tab" (click)="onTabClicks(2)">TIMES</a>
+                                            
+                                        </li>
+                                        <li *ngIf="tabAccess4" class="cld_header_desktop" [ngClass]="{ 'active': tab4}">
+                                            <a class="cld_header_list" data-toggle="tab" (click)="onTabClicks(3)">EMPLOYEE</a>
+                                        
+                                        </li>
+                                        <li *ngIf="tabAccess5" class="cld_header_desktop" [ngClass]="{ 'active': tab5}">
+                                            <a class="cld_header_list" data-toggle="tab" (click)="onTabClicks(4)">MY PROFILE</a>
+                                        
+                                        </li>
+                                        <li *ngIf="tabAccess5" class="cld_header_desktop" [ngClass]="{ 'active': tab6}">
+                                            <a class="cld_header_list" data-toggle="tab" (click)="onTabClicks(5)">SETTINGS</a>                        
+                                        </li>
+                                    </ul>
+                            </div>
+                        </nav>
                     </div>
-                </div>
-            </div>
-        </header>
-    <div class="iko_active_sos_header_tab">
-            <div class="iko_wrapper">
-                <ul class="nav nav-tabs view_details_tab iko_active_sos_li">
-                    <!-- tab section for admin main page -->
-                    <li *ngIf="tabAccess1" [ngClass]="{ 'active': tab1}">
-                        <a data-toggle="tab" (click)="onTabClicks(0)">Home</a>
-                        <div class="active_viewdetails_tab iko_active_sos_li_border">
-                            <!-- border bottom for active class -->
-                            <img *ngIf="tab1" src="assets/images/border_green.png" alt="img">
-                            <!-- active image -->
-                        </div>
-                    </li>
-                    <li *ngIf="tabAccess2" [ngClass]="{ 'active': tab2}">
-                        <a data-toggle="tab" (click)="onTabClicks(1)">Project</a>
-                        <div class="active_viewdetails_tab iko_active_sos_li_border">
-                            <!-- border bottom for active class -->
-                            <img *ngIf="tab2" src="assets/images/border_green.png" alt="img">
-                            <!-- active image -->
-                        </div>
-                    </li>
-                    <li *ngIf="tabAccess3" [ngClass]="{ 'active': tab3}">
-                        <a data-toggle="tab" (click)="onTabClicks(2)">Times</a>
-                        <div class="active_viewdetails_tab iko_active_sos_li_border">
-                            <!-- border bottom for active class -->
-                            <img *ngIf="tab3" src="assets/images/border_green.png" alt="img">
-                            <!-- active image -->
-                        </div>
-                    </li>
-                    <li *ngIf="tabAccess4" [ngClass]="{ 'active': tab4}">
-                        <a data-toggle="tab" (click)="onTabClicks(3)">Employee</a>
-                        <div class="active_viewdetails_tab iko_active_sos_li_border">
-                            <!-- border bottom for active class -->
-                            <img *ngIf="tab4" src="assets/images/border_green.png" alt="img">
-                            <!-- active image -->
-                        </div>
-                    </li>
-                    <li *ngIf="tabAccess5" [ngClass]="{ 'active': tab5}">
-                        <a data-toggle="tab" (click)="onTabClicks(4)">My Profile</a>
-                        <div class="active_viewdetails_tab iko_active_sos_li_border">
-                            <!-- border bottom for active class -->
-                            <img *ngIf="tab5" src="assets/images/border_green.png" alt="img">
-                            <!-- active image -->
-                        </div>
-					</li>
-					<li *ngIf="tabAccess5" [ngClass]="{ 'active': tab5}">
-                        <a data-toggle="tab" (click)="onTabClicks(5)">Settings</a>
-                        <div class="active_viewdetails_tab iko_active_sos_li_border">
-                            <!-- border bottom for active class -->
-                            <img *ngIf="tab6" src="assets/images/border_green.png" alt="img">
-                            <!-- active image -->
-                        </div>
-                    </li>
-                </ul>
-            </div>
+            </header>
         </div>
-        <div class="content-wrap" id="content-wrap">
-            <main id="content" class="content view-animate fade-up" role="main">
-                <router-outlet></router-outlet>
-            </main>
-        </div>
+    </div>        
+         <router-outlet></router-outlet> 
+</div>
