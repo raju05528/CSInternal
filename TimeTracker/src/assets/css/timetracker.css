@@ -704,3 +704,87 @@ span.cld_active_logout_text{
     color: #fff; /* active text color */
     background-color: #a94442; /* active bg color */
 }
+.cld_contact_button {
+    border-radius: 0px;
+    width: 100%;
+    height: 46px;
+    margin-top: 15px;
+    background-color: #DA1A32;
+    color: #fff;
+}
+.cld_contact_button_width {
+    width: 12% !important;
+}
+.cld_contact_button {
+    border-radius: 0px;
+    width: 100%;
+    height: 46px;
+    margin-top: 15px;
+    background-color: #DA1A32;
+    color: #fff;
+}
+.cld_about_tab {
+    height: auto;
+    /* max-width: 1293px; */
+    margin: auto;
+}
+
+.cld_service_cl01 {
+    /* max-width: 1205px; */
+    padding: 0px 15px;
+    /* min-height: 580px; */
+    position: relative;
+    margin: auto;
+    padding-top: 14px;
+    z-index: 2;
+}
+
+.cld_service_cl01 .nav-tabs>li:first-child {
+    margin-left: 0px;
+}
+.cld_about_tab .nav-tabs li:first-child {
+    margin-left: 0px;
+}
+.cld_service_cl01 .nav-tabs>li {
+    /* margin-bottom: 0px; */
+    /* margin: 0px 10px; */
+    margin-right: 4px;
+    /* border: 1px solid #AAA; */
+    border-bottom: none;
+    height: 34px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+/* .nav-tabs>li {
+    float: left;
+    margin-bottom: -1px;
+}
+
+.nav>li {
+    position: relative;
+    display: block;
+} */
+
+.cld_service_cl01 .nav-tabs>li.active>a {
+    top: -1px;
+    position: relative;
+    background-color: #DA1A32;
+    z-index: 123;
+    height: 34px;
+    color: #fff !important;
+}
+
+.cld_about_tab .nav-tabs li a {
+    font-weight: bold;
+}
+
+.cld_service_cl01 .nav-tabs>li a, .cld_service_cl01 .nav-tabs>li a:focus {
+    border-bottom: none;
+    box-shadow: none;
+    /* padding-bottom: 13px; */
+}
+
+.cld_service_cl01 .nav-tabs>li a {
+    padding: 5px 5px;
+    font-size: 14px;
+}

@@ -191,129 +191,7 @@ font-family:'Mukta-ExtraLight';
     left: 550px !important;
 }
 
-.cld_inner_header {
-    height: 73px;
-}
-
-.cld_inner_header .cld_header {
-    padding-top: 9px;
-}
-
-.cld_main_select option:hover {
-    outline: none;
-    background: red;
-}
-
-.cld_header { /*Header */
-    max-width: 100%;
-    padding: 0px 15px;
-    /* padding-left: 23px; */
-    margin: auto;
-    padding-top: 35px;
-    position: relative;
-}
-
-.cld_logo {
-    width: 180px;
-    height: 36px;
-}
-
-.cld_header_logo { /*Header Logo*/
-    float: left;
-    height: 100px;
-    width: 220px;
-    background-color: #DA1A32;
-    position: absolute;
-    top: 0px;
-    padding: 35px 0px;
-    z-index: 4;
-    cursor: pointer;
-    text-align: center;
-}
-
-.cld_header_logo_small a[href="index.html"] { /*Header Logo for nonhome page*/
-    float: left;
-    height: 67px;
-    width: 210px;
-    background-color: #DA1A32;
-    position: absolute;
-    top: 0px;
-    padding-top: 20px;
-    padding-left: 15px;
-    z-index: 4;
-    cursor: pointer;
-}
-
-.cld_header_logo a,
-.cld_header_logo a:active,
-.cld_header_logo a:hover,
-.cld_header_logo a:focus { /*Header logo link*/
-    border: none;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.cld_header_logo_small a,
-.cld_header_logo_small a:active,
-.cld_header_logo_small a:hover,
-.cld_header_logo_small a:focus { /*Header logo link*/
-    border: none;
-    text-decoration: none;
-}
-
-.cld_header_logo_small_career a,
-.cld_header_logo_small_career a:active,
-.cld_header_logo_small_career a:hover,
-.cld_header_logo_small_career a:focus { /*Header logo link*/
-    border: none;
-    text-decoration: none;
-}
-
-.cld_header_logo::after { /*Header logo slanted*/
-    content: "";
-    background: #DA1A32;
-    height: 40px;
-    transform: skewY(-8deg);
-    -webkit-transform: skewY(-8deg);
-    -moz-transform: skewY(-8deg);
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    display: block;
-}
-
-.cld_header_logo_small a[href="index.html"]::after { /*Header logo slanted*/
-    content: "";
-    background: #DA1A32;
-    height: 40px;
-    transform: skewY(-8deg);
-    -webkit-transform: skewY(-8deg);
-    -moz-transform: skewY(-8deg);
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    display: block;
-}
-
-.cld_header_logo::after { /*Header logo slanted*/
-    bottom: -15px;
-}
-
-.cld_header_logo_small a[href="index.html"]::after { /*Header logo slanted*/
-    bottom: -21px;
-}
-
-
-
-
-
-
-body {
-}
-
-
+/* 
 .divMainContent {
     position: relative;
     height: auto;
@@ -327,8 +205,8 @@ body {
     height: 20px;
     background-color: #f1f1f3;
     /*background:#f1f1f3;*/
-    margin-left: 10px !important;
-}
+    /* margin-left: 10px !important; */
+/* } */
 
 .divlegend {
     position: relative;

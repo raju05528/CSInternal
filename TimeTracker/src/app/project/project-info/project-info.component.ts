@@ -27,7 +27,8 @@ export class ProjectInfo implements OnInit {
             name: ['', Validators.required],
             projectNote: [''],
             startDateTime:[''],
-            endDateTime:['']
+            endDateTime:[''],
+            manager:['']
         });
       
     }

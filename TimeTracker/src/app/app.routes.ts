@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { PROJECT_ROUTES } from './project/project.routes';
-import { HOME_ROUTES } from './home/home.routes';
+//import { HOME_ROUTES } from './home/home.routes';
 
 declare var System: any;
 

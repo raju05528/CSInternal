@@ -10,7 +10,6 @@ declare var jQuery: any;
     selector: 'home',
     templateUrl: './home.html',
     encapsulation: ViewEncapsulation.None
-
 })
 export class Home implements OnInit {
     router: Router;
