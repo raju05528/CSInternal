@@ -6,8 +6,8 @@
                     <!-- header container starts -->
                     <div class="cld_header">             
                             <div class="cld_header_logo_small">
-                                <img  src="assets/images/clodium.jpg" alt="img"> 
-                                <div style="float:right">
+                                <img  src="assets/images/clodium.jpg" alt="img" style="margin-left:10px;"> 
+                                <div style="float:right;margin-right:10px;">
                                     <span class="cld_active_logout_name" style="font-size:16px !important;color: #009BEA;">{{name}}</span>
                                     <span class="cld_active_logout_text" style="font-size:14px;" (click)="logout()">Logout</span>   
                                 </div>                
@@ -21,31 +21,31 @@
             
                         <!-- <nav class="navbar navbar-default" style="background-color: white; border-color: white;">
                             <div class="navbar-header"></div> -->
-                            <div class="collapse navbar-collapse" id="cld-navbar-collapse" style="float: right;margin-right: 100px;">
+                            <div class="collapse navbar-collapse" id="cld-navbar-collapse" style="float: right;margin-right:10%;">
                                     <ul class="nav navbar-nav">
                                         <!-- tab section for admin main page -->
-                                        <li *ngIf="tabAccess1" class="cld_header_desktop" [ngClass]="{ 'active': tab1}">
-                                            <a class="cld_header_list cld_header_active" data-toggle="tab" (click)="onTabClicks(0)">HOME</a>
+                                        <li *ngIf="tabAccess1" class="cld_header_desktop" >
+                                            <a class="cld_header_list" [ngClass]="{ 'cld_header_active': tab1}" data-toggle="tab" (click)="onTabClicks(0)">HOME</a>
                                             
                                         </li>
-                                        <li *ngIf="tabAccess2" class="cld_header_desktop" [ngClass]="{ 'active': tab2}">
-                                            <a class="cld_header_list" data-toggle="tab" (click)="onTabClicks(1)">PROJECT</a>
+                                        <li *ngIf="tabAccess2" class="cld_header_desktop" >
+                                            <a class="cld_header_list" data-toggle="tab" [ngClass]="{ 'cld_header_active': tab2}" (click)="onTabClicks(1)">PROJECT</a>
                                             
                                         </li>
-                                        <li *ngIf="tabAccess3" class="cld_header_desktop" [ngClass]="{ 'active': tab3}">
-                                            <a class="cld_header_list" data-toggle="tab" (click)="onTabClicks(2)">TIMES</a>
+                                        <li *ngIf="tabAccess3" class="cld_header_desktop" >
+                                            <a class="cld_header_list" data-toggle="tab" [ngClass]="{ 'cld_header_active': tab3}" (click)="onTabClicks(2)">TIMES</a>
                                             
                                         </li>
-                                        <li *ngIf="tabAccess4" class="cld_header_desktop" [ngClass]="{ 'active': tab4}">
-                                            <a class="cld_header_list" data-toggle="tab" (click)="onTabClicks(3)">EMPLOYEE</a>
+                                        <li *ngIf="tabAccess4" class="cld_header_desktop">
+                                            <a class="cld_header_list" data-toggle="tab" [ngClass]="{ 'cld_header_active': tab4}" (click)="onTabClicks(3)">EMPLOYEE</a>
                                         
                                         </li>
-                                        <li *ngIf="tabAccess5" class="cld_header_desktop" [ngClass]="{ 'active': tab5}">
-                                            <a class="cld_header_list" data-toggle="tab" (click)="onTabClicks(4)">MY PROFILE</a>
+                                        <li *ngIf="tabAccess5" class="cld_header_desktop">
+                                            <a class="cld_header_list" data-toggle="tab" [ngClass]="{ 'cld_header_active': tab5}" (click)="onTabClicks(4)">MY PROFILE</a>
                                         
                                         </li>
-                                        <li *ngIf="tabAccess5" class="cld_header_desktop" [ngClass]="{ 'active': tab6}">
-                                            <a class="cld_header_list" data-toggle="tab" (click)="onTabClicks(5)">SETTINGS</a>                        
+                                        <li *ngIf="tabAccess5" class="cld_header_desktop" >
+                                            <a class="cld_header_list" data-toggle="tab" [ngClass]="{ 'cld_header_active': tab6}" (click)="onTabClicks(5)">SETTINGS</a>                        
                                         </li>
                                     </ul>
                             </div>

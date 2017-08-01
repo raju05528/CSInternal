@@ -9,20 +9,20 @@
     <div class="navbar-header"></div>
         <div class="collapse navbar-collapse" id="cld-navbar-collapse"> -->
                 <ul class="nav nav-tabs">
-                    <li class="active" >
-                        <a class="cld_header_list cld_header_active" data-toggle="tab">General Info</a>
+                    <li [ngClass]="{ 'active': tab1}" >
+                        <a class="cld_header_list"  data-toggle="tab" (click)="onTabClick(0)">General Info</a>
                         
                     </li>
-                    <li >
-                        <a class="cld_header_list" data-toggle="tab" >Member Assignment</a>
+                    <li [ngClass]="{ 'active': tab2}">
+                        <a class="cld_header_list" data-toggle="tab"  (click)="onTabClick(1)">Member Assignment</a>
                         
                     </li>
-                    <li>
-                        <a class="cld_header_list" data-toggle="tab" >Task</a>
+                    <li [ngClass]="{ 'active': tab3}">
+                        <a class="cld_header_list" data-toggle="tab"  (click)="onTabClick(2)">Task</a>
                         
                     </li>
-                    <li >
-                        <a class="cld_header_list" data-toggle="tab" >Client Info</a>                                        
+                    <li [ngClass]="{ 'active': tab4}">
+                        <a class="cld_header_list" data-toggle="tab" (click)="onTabClick(3)">Client Info</a>                                        
                     </li>
                     
                 </ul>

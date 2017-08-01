@@ -58,6 +58,11 @@ export class Layout implements OnInit {
             // vm.sharedService.setOption(5);
             //vm.router.navigate(['/adminusers']);
         }
+        else if (index == 5) {
+            vm.tab6 = true;
+            // vm.sharedService.setOption(5);
+            //vm.router.navigate(['/adminusers']);
+        }
     }
   
   logout(): any {
