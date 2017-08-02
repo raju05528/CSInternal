@@ -7,9 +7,12 @@ import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
 import { ProjectModule } from './project/project.module';
 import { HomeModule } from './home/home.module';
+import { TestshowModule } from './testshow/testshow.module';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+   
   ],
   imports: [
     BrowserModule,
@@ -19,6 +22,7 @@ import { HomeModule } from './home/home.module';
     HttpModule,
     ProjectModule,
     HomeModule,
+    TestshowModule,
     RouterModule.forRoot(ROUTES,{ useHash: false })
   ],
   providers: [],
