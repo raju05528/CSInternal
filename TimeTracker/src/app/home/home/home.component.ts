@@ -9,7 +9,6 @@ declare var jQuery: any;
 @Component({
     selector: 'home',
     templateUrl: './home.html'
-
 })
 
 @Directive({selector: 'canvas[baseChart]'})
@@ -20,12 +19,16 @@ export class Home implements OnInit {
     public pieChartLabels:string[] = ['Saved', 'Submitted', 'Pending'];
     public pieChartData:number[] = [20, 10, 10];
     public pieChartType:string = 'pie';
+    public showWeek="31/07/207 - 06/08/2017";
     constructor(private route: ActivatedRoute
         , private formbuilder: FormBuilder, router: Router) {
         this.router = router;
 
     }
-   
+   public chartColors: any[] = [
+      { 
+        backgroundColor:['#6bad05', '#f29e00', '#DA1A32'] 
+      }];
  
   // events
   public chartClicked(e:any):void {

@@ -6,12 +6,19 @@
                     <!-- header container starts -->
                     <div class="cld_header">             
                             <div class="cld_header_logo_small">
-                                <img  src="assets/images/clodium.jpg" alt="img" style="margin-left:10px;"> 
-                                <div style="float:right;margin-right:10px;">
+                                <!-- <img  src="assets/images/clodium.jpg" alt="img" style="margin-left:10px;">  -->
+                               
+                    <!-- Header Logo-->
+                                <a href="#" class="ui-link">
+                                    <img class="cld_logo" src="assets/images/logo_clodium.svg" alt="logo" style="position: absolute; left: 0px;" />
+                                </a>
+                           
+                                             
+                            </div>
+                            <div style="float:right;margin-right:10px;">
                                     <span class="cld_active_logout_name" style="font-size:16px !important;color: #009BEA;">{{name}}</span>
                                     <span class="cld_active_logout_text" style="font-size:14px;" (click)="logout()">Logout</span>   
-                                </div>                
-                            </div>
+                                </div>   
                             <!-- <div class="cld_active_logout_section">
                                 <div class="iko_active_sos_logout_container">
                                     <span class="cld_active_logout_name" style="font-size:14px;">{{name}}</span>
