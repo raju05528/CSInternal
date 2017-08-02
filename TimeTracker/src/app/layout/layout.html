@@ -3,63 +3,57 @@
     <div class="row">
         <div class="header_cont">
             <header class="cld_inner_header">
-                    <!-- header container starts -->
-                    <div class="cld_header">             
-                            <div class="cld_header_logo_small">
-                                <!-- <img  src="assets/images/clodium.jpg" alt="img" style="margin-left:10px;">  -->
-                               
-                    <!-- Header Logo-->
-                                <a href="#" class="ui-link">
+                <!-- header container starts -->
+                <div class="cld_header">
+                    <div class="cld_header_logo_small">
+                        <!-- Header Logo-->
+                        <a href="#" class="ui-link">
                                     <img class="cld_logo" src="assets/images/logo_clodium.svg" alt="logo" style="position: absolute; left: 0px;" />
                                 </a>
-                           
-                                             
-                            </div>
-                            <div style="float:right;margin-right:10px;">
-                                    <span class="cld_active_logout_name" style="font-size:16px !important;color: #009BEA;">{{name}}</span>
-                                    <span class="cld_active_logout_text" style="font-size:14px;" (click)="logout()">Logout</span>   
-                                </div>   
-                            <!-- <div class="cld_active_logout_section">
-                                <div class="iko_active_sos_logout_container">
-                                    <span class="cld_active_logout_name" style="font-size:14px;">{{name}}</span>
-                                    <span class="cld_active_logout_text" style="font-size:14px;" (click)="logout()">Logout</span>
-                                </div>
-                            </div> -->
-            
-                        <!-- <nav class="navbar navbar-default" style="background-color: white; border-color: white;">
-                            <div class="navbar-header"></div> -->
-                            <div class="collapse navbar-collapse" id="cld-navbar-collapse" style="float: right;margin-right:10%;">
-                                    <ul class="nav navbar-nav">
-                                        <!-- tab section for admin main page -->
-                                        <li *ngIf="tabAccess1" class="cld_header_desktop" >
-                                            <a class="cld_header_list" [ngClass]="{ 'cld_header_active': tab1}" data-toggle="tab" (click)="onTabClicks(0)">HOME</a>
-                                            
-                                        </li>
-                                        <li *ngIf="tabAccess2" class="cld_header_desktop" >
-                                            <a class="cld_header_list" data-toggle="tab" [ngClass]="{ 'cld_header_active': tab2}" (click)="onTabClicks(1)">PROJECT</a>
-                                            
-                                        </li>
-                                        <li *ngIf="tabAccess3" class="cld_header_desktop" >
-                                            <a class="cld_header_list" data-toggle="tab" [ngClass]="{ 'cld_header_active': tab3}" (click)="onTabClicks(2)">TIMES</a>
-                                            
-                                        </li>
-                                        <li *ngIf="tabAccess4" class="cld_header_desktop">
-                                            <a class="cld_header_list" data-toggle="tab" [ngClass]="{ 'cld_header_active': tab4}" (click)="onTabClicks(3)">EMPLOYEE</a>
-                                        
-                                        </li>
-                                        <li *ngIf="tabAccess5" class="cld_header_desktop">
-                                            <a class="cld_header_list" data-toggle="tab" [ngClass]="{ 'cld_header_active': tab5}" (click)="onTabClicks(4)">MY PROFILE</a>
-                                        
-                                        </li>
-                                        <li *ngIf="tabAccess5" class="cld_header_desktop" >
-                                            <a class="cld_header_list" data-toggle="tab" [ngClass]="{ 'cld_header_active': tab6}" (click)="onTabClicks(5)">SETTINGS</a>                        
-                                        </li>
-                                    </ul>
-                            </div>
-                        <!-- </nav> -->
                     </div>
+                    <div style="float:right;margin-right:10px;">
+                        <span class="cld_active_logout_name" style="font-size:16px !important;color: #009BEA;">{{name}}</span><br>
+                        <span class="cld_active_logout_text" style="font-size:14px;" (click)="logout()">Logout</span>
+                    </div>
+
+                    <!-- <nav class="navbar navbar-default"> -->
+                    <div class="navbar-header">
+                        <!--Header navigation toggle button-->
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cld-navbar-collapse" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="cld-navbar-collapse" style="float: right;margin-right:10%;">
+                        <ul class="nav navbar-nav">
+                            <!-- tab section for admin main page -->
+                            <li *ngIf="tabAccess1" class="cld_header_desktop">
+                                <a class="cld_header_list" [ngClass]="{ 'cld_header_active': tab1}" data-toggle="tab" (click)="onTabClicks(0)">HOME</a>
+
+                            </li>
+                            <li *ngIf="tabAccess2" class="cld_header_desktop">
+                                <a class="cld_header_list" data-toggle="tab" [ngClass]="{ 'cld_header_active': tab2}" (click)="onTabClicks(1)">PROJECT</a>
+
+                            </li>
+                            <li *ngIf="tabAccess3" class="cld_header_desktop">
+                                <a class="cld_header_list" data-toggle="tab" [ngClass]="{ 'cld_header_active': tab3}" (click)="onTabClicks(2)">TIME SHEET</a>
+
+                            </li>
+                            <li *ngIf="tabAccess5" class="cld_header_desktop">
+                                <a class="cld_header_list" data-toggle="tab" [ngClass]="{ 'cld_header_active': tab5}" (click)="onTabClicks(4)">MY PROFILE</a>
+
+                            </li>
+                            <li *ngIf="tabAccess5" class="cld_header_desktop">
+                                <a class="cld_header_list" data-toggle="tab" [ngClass]="{ 'cld_header_active': tab6}" (click)="onTabClicks(5)">SETTINGS</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- </nav> -->
+                </div>
             </header>
         </div>
-    </div>        
-         <router-outlet></router-outlet> 
+    </div>
+    <router-outlet></router-outlet>
 </div>
