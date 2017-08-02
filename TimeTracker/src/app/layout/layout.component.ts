@@ -26,8 +26,7 @@ export class Layout implements OnInit {
     private tabAccess4: boolean = true;
     private tabAccess5: boolean = true;
     private currentTab: string;
-    constructor(el: ElementRef,  private router: Router) {
-    
+    constructor(el: ElementRef,  private router: Router) {    
   }
     public onTabClicks(index: number) {
         let vm = this;
@@ -51,6 +50,7 @@ export class Layout implements OnInit {
             //vm.router.navigate(['/subscriptionplan']);
         } else if (index == 3) {
             vm.tab4 = true;
+             vm.router.navigate(['/testshow']);
             // vm.sharedService.setOption(4);
             //vm.router.navigate(['/emergencyservice']);
         } else if (index == 4) {
