@@ -1,1 +1,9 @@
 <h1>Home Page</h1>
+<div style="display: block;width:20%;height:30%">
+  <canvas baseChart
+          [data]="pieChartData"
+          [labels]="pieChartLabels"
+          [chartType]="pieChartType"
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)"> </canvas>
+</div>

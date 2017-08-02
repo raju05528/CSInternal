@@ -7,6 +7,7 @@ import { Home } from './home/home.component';
 import { HOME_ROUTES } from './home.routes';
 import { ProjectModule } from '../project/project.module';
 import {LayoutModule} from '../layout/layout.module';
+import { ChartsModule } from 'ng2-charts/ng2-charts';
 @NgModule({
   imports: [
     CommonModule
@@ -16,6 +17,7 @@ import {LayoutModule} from '../layout/layout.module';
     , HOME_ROUTES
     , ProjectModule
     ,LayoutModule
+    ,ChartsModule
   ],
   declarations: [
      Home
