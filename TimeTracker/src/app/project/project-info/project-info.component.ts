@@ -3,7 +3,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { FormGroup, Validators, FormBuilder, FormControlName } from '@angular/forms';
 import { NgClass } from '@angular/common';
 //import { Layout } from '../layout/layout.component';
-
+import { AssignManagementInfo } from '../assign-management/assign.component';
 declare var jQuery: any;
 
 @Component({

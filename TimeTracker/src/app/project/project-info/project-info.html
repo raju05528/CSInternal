@@ -6,9 +6,6 @@
 <section>
     <div class="container">
         <div class="cld_service_cl01 cld_about_tab">
-            <!-- <nav class="nav nav-tabs" style="width: 96%;margin-left: 2%;">
-    <div class="navbar-header"></div>
-        <div class="collapse navbar-collapse" id="cld-navbar-collapse"> -->
             <ul class="nav nav-tabs">
                 <li [ngClass]="{ 'active': tab1}">
                     <a class="cld_header_list" data-toggle="tab" (click)="onTabClick(0)">General Info</a>
@@ -27,10 +24,9 @@
                 </li>
 
             </ul>
-            <!-- </div>
-</nav>  -->
         </div>
         <div class="widget-body">
+            <div *ngIf ="tab1">
             <form class="form-horizontal" role="form" [formGroup]="projectForm" style="margin-left:4%;padding-top:2%;">
                 <div class="row">
                     <div class="col-md-10 col-xs-10">
@@ -45,7 +41,7 @@
                             <div class="form-group row">
                                 <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Status:</label>
                                 <div class="col-md-7 col-xs-12">
-                                    <select>
+                                    <select class="form-control">
                                     <option value='0'>Active</option>
                                     <option value='1'>InActive</option>
                                     <option value='2'>Hold</option>
@@ -62,7 +58,7 @@
                             <div class="form-group row">
                                 <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Type:</label>
                                 <div class="col-md-7 col-xs-12">
-                                    <select>
+                                    <select class="form-control">
                                     <option value='bill'>Bill</option>
                                     <option value='internal'>Internal</option>
                                 </select>
@@ -100,7 +96,11 @@
                         </div>
                     </div>
                 </div>
-            </form>
+            </form>  
+            </div>          
+            <div *ngIf ="tab2" id="divassignmanagement" style="margin-left:4%;padding-top:2%;">
+            <assign-management></assign-management>
+            </div>
         </div>
     </div>
 </section>

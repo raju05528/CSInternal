@@ -2,10 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-
-import { Project } from './project';
 import { ProjectInfo } from './project-info/project-info.component';
-import { PROJECT_ROUTES } from '../project/project.routes';
+ import { AssignManagementInfo } from './assign-management/assign.component';
 //import {Layout} from '../layout/layout.component';
 //import {LayoutModule} from '../layout/layout.module';
 
@@ -14,12 +12,11 @@ import { PROJECT_ROUTES } from '../project/project.routes';
         CommonModule
         , FormsModule
         , ReactiveFormsModule
-        , RouterModule
-        //, LayoutModule        
+        , RouterModule     
     ],
     declarations: [
-        Project
-        , ProjectInfo
+       ProjectInfo
+       ,AssignManagementInfo
     ]
 
 })
