@@ -8,11 +8,12 @@ import { ROUTES } from './app.routes';
 import { ProjectModule } from './project/project.module';
 import { HomeModule } from './home/home.module';
 import { TimesheetComponent } from './timesheet/timesheet.component';
+import { TestshowModule } from './testshow/testshow.module';
 @NgModule({
   declarations: [
     AppComponent,
     TimesheetComponent
-  ],
+   ],
   imports: [
     BrowserModule,
     FormsModule,
@@ -21,6 +22,7 @@ import { TimesheetComponent } from './timesheet/timesheet.component';
     HttpModule,
     ProjectModule,
     HomeModule,
+    TestshowModule,
     RouterModule.forRoot(ROUTES,{ useHash: false })
   ],
   providers: [],

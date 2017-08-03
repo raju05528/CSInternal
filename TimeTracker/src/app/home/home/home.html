@@ -1,12 +1,9 @@
-<div style="margin-top:5%;">
-<div style="display: block;width:20%;height:30%">
-  <canvas baseChart
-          [data]="pieChartData"
-          [labels]="pieChartLabels"
-          [chartType]="pieChartType"
-          [colors]="chartColors"
-          (chartHover)="chartHovered($event)"
-          (chartClick)="chartClicked($event)"> </canvas>
-</div>
-<div><b>Time Sheet for the week:{{showWeek}}</b> </div>
+<div class=container>
+  <div style="margin-top:5%;">
+    <div style="display: block;width:20%;height:30%">
+      <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType" [colors]="chartColors" (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)"> </canvas>
+    </div>
+    <div><b>Time Sheet for the week:{{showWeek}}</b> </div>
+  </div>
 </div>
