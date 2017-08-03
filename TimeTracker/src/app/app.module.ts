@@ -7,9 +7,11 @@ import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
 import { ProjectModule } from './project/project.module';
 import { HomeModule } from './home/home.module';
+import { TimesheetComponent } from './timesheet/timesheet.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TimesheetComponent
   ],
   imports: [
     BrowserModule,

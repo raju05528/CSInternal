@@ -48,7 +48,7 @@ export class Layout implements OnInit {
         } else if (index == 2) {
             vm.tab3 = true;
             // vm.sharedService.setOption(3);
-            //vm.router.navigate(['/subscriptionplan']);
+            vm.router.navigate(['/timesheet']);
         } else if (index == 3) {
             vm.tab4 = true;
             // vm.sharedService.setOption(4);

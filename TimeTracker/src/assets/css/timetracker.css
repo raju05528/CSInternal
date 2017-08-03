@@ -1,5 +1,6 @@
 ﻿body {
 font: 14px  Mukta-ExtraLight !important;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
 
 }
 .main
@@ -994,6 +995,13 @@ span.cld_active_logout_text{
 .cld_header_logo_small ::after { /*Header logo slanted*/
     bottom: -21px;
 }
+
+.style-select{
+    width: 300px !important;
+    background-color: rgba(0, 150, 136, 0.18) !important;
+}
+tr:nth-child(even){background-color: #f2f2f2 !important}
+
 
 
 

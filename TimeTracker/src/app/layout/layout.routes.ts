@@ -3,6 +3,7 @@ import { Layout } from './layout.component';
 import { Home } from '../home/home/home.component';
 import { ProjectInfo } from '../project/project-info/project-info.component';
 import { Project } from '../project/project';
+import { TimesheetComponent } from '../timesheet/timesheet.component';
 const routes: Routes = [
   {
     path: ''
@@ -10,7 +11,8 @@ const routes: Routes = [
     ,
     children: [
       { path: '', component: Home },
-      { path: 'project', component: ProjectInfo }
+      { path: 'project', component: ProjectInfo },
+      { path: 'timesheet', component: TimesheetComponent }
       
     ]
   }
