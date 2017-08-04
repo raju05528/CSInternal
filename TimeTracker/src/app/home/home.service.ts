@@ -11,7 +11,8 @@ import 'rxjs/Rx';
 export class ProjectService {
     protected baseURL: string = '';
     private isErrorOccured: boolean = false;
-    private serviceCount: number = 0;
+    private serviceCount: number = 0;    
+    
     constructor(private http: Http) {
 
         if (window.location.hostname == 'localhost') {
@@ -26,5 +27,13 @@ export class ProjectService {
     public getAllEmployees() {
         return this.http.get(this.baseURL + '/TimeSheet/selectEmp').map((res) => res.json());
     }
+    
+    public getSelectedEmployees() {
+        return this.http.get(this.baseURL + '/TimeSheet/GetSelectedEmployees').map((res) => res.json());
+    }
+        public getWeeklyProjects() {
+        return this.http.get(this.baseURL + '/TimeSheet/GetWeeklyProjects').map((res) => res.json());
+    }
+
 }
 

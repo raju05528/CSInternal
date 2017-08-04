@@ -55,14 +55,18 @@ export class Home implements OnInit {
       //data is your employee list      
       var emprecs = data;
       console.log('---------------Employee details------------------');
+
       for (var emp in emprecs) {
         if (emp == "recordset") {
           var empparsed = emprecs[emp];
           this.emplst=emprecs[emp];
-          for (var i = 0; i < empparsed.length; i++) {
+          console.log('emp object : '+JSON.stringify(this.emplst));
+          for (var i = 0; i < empparsed.length; i++) {                        
             console.log('Employee FirstName : ' + empparsed[i].FirstName);
             console.log('Employee LastName : ' + empparsed[i].LastName);
-            console.log('Employee EmailID : ' + empparsed[i].EmailID);            
+            console.log('Employee EmailID : ' + empparsed[i].EmailID);  
+            console.log('Employee EmailID : ' + empparsed[i].Employee_Id);  
+
           }
         }
       }

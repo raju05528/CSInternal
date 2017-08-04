@@ -9,6 +9,7 @@ import { ProjectModule } from './project/project.module';
 import { HomeModule } from './home/home.module';
 import { TimesheetComponent } from './timesheet/timesheet.component';
 import { TestshowModule } from './testshow/testshow.module';
+import { MomentModule } from "angular2-moment";
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +24,7 @@ import { TestshowModule } from './testshow/testshow.module';
     ProjectModule,
     HomeModule,
     TestshowModule,
+    MomentModule,
     RouterModule.forRoot(ROUTES,{ useHash: false })
   ],
   providers: [],
