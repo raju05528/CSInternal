@@ -24,88 +24,131 @@
                 </li>
             </ul>
         </div>
-        <div class="widget-body">
-            <div *ngIf ="tab1">
-            <form class="form-horizontal" role="form" [formGroup]="projectForm" style="margin-left:4%;padding-top:2%;">
-                <div class="row">
-                    <div class="col-md-10 col-xs-10">
-                        <div style="width:100%;">
-                            <div class="form-group row">
-                                <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Project Name:</label>
-                                <div class="col-md-7 col-xs-12">
-                                    <input maxlength="100" type="text" id="normal-field" [(ngModel)]="project.name" formControlName="name" [ngClass]="!projectForm.controls['name'].valid && !isPageLoad ? 'required-val':''"
-                                        class="form-control" placeholder="Project name">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Status:</label>
-                                <div class="col-md-7 col-xs-12">
-                                    <select class="form-control">
+        <div *ngIf="tab1">
+            <div class="col-md-12" *ngIf="isShow" style="padding-top:2%;">
+                <input type="button" class="btn cld_contact_button cld_contact_button_width" (click)="AddProject();" style="padding-top:0px !important;float:right;"
+                    value="Add Project">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Manager</th>
+                            <th>Type</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                LMS
+                            </td>
+                            <td>
+                                Raju
+                            </td>
+                            <td>
+                                Internal
+                            </td>
+                            <td>
+                                01-08-2017
+                            </td>
+                            <td>
+                                30-08-2017
+                            </td>
+                            <td>
+                                Active
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="widget-body">
+                <div *ngIf="!isShow">
+                    <form class="form-horizontal" role="form" [formGroup]="projectForm" style="margin-left:4%;padding-top:2%;">
+                        <div class="row">
+                            <div class="col-md-10 col-xs-10">
+                                <div style="width:100%;">
+                                    <div class="form-group row">
+                                        <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Project Name:</label>
+                                        <div class="col-md-7 col-xs-12">
+                                            <input maxlength="100" type="text" id="normal-field" [(ngModel)]="project.name" formControlName="name" [ngClass]="!projectForm.controls['name'].valid && !isPageLoad ? 'required-val':''"
+                                                class="form-control" placeholder="Project name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Status:</label>
+                                        <div class="col-md-7 col-xs-12">
+                                            <select class="form-control">
                                     <option value='0'>Active</option>
                                     <option value='1'>InActive</option>
                                     <option value='2'>Hold</option>
                                 </select>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Manager:</label>
-                                <div class="col-md-7 col-xs-12">
-                                    <input maxlength="100" type="text" id="normal-field" [(ngModel)]="project.manager" formControlName="name" [ngClass]="!projectForm.controls['manager'].valid && !isPageLoad ? 'required-val':''"
-                                        class="form-control" placeholder="Manager">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Type:</label>
-                                <div class="col-md-7 col-xs-12">
-                                    <select class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Manager:</label>
+                                        <div class="col-md-7 col-xs-12">
+                                            <input maxlength="100" type="text" id="normal-field" [(ngModel)]="project.manager" formControlName="name" [ngClass]="!projectForm.controls['manager'].valid && !isPageLoad ? 'required-val':''"
+                                                class="form-control" placeholder="Manager">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Type:</label>
+                                        <div class="col-md-7 col-xs-12">
+                                            <select class="form-control">
                                     <option value='bill'>Bill</option>
                                     <option value='internal'>Internal</option>
                                 </select>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Start Date:</label>
-                                <div class="col-md-7 col-xs-12">
-                                    <p class="input-group">
-                                        <input type="date" [(ngModel)]="project.startDate" class="filterDate iko_backoffice_cursor" formControlName="startDateTime">
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">End Date:</label>
-                                <div class="col-md-7 col-xs-12">
-                                    <input type="date" [(ngModel)]="project.endDate" class="filterDate iko_backoffice_cursor" formControlName="endDateTime">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Project Note:</label>
-                                <div class="col-md-7 col-xs-12">
-                                    <textarea style="background-color:white;width:100%;height:200px" placeholder="Project Notes" id="normal-field" [(ngModel)]="project.projectNote"
-                                        formControlName="projectNote">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Start Date:</label>
+                                        <div class="col-md-7 col-xs-12">
+                                            <p class="input-group">
+                                                <input type="date" [(ngModel)]="project.startDate" class="filterDate iko_backoffice_cursor" formControlName="startDateTime">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">End Date:</label>
+                                        <div class="col-md-7 col-xs-12">
+                                            <input type="date" [(ngModel)]="project.endDate" class="filterDate iko_backoffice_cursor" formControlName="endDateTime">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Project Note:</label>
+                                        <div class="col-md-7 col-xs-12">
+                                            <textarea style="background-color:white;width:100%;height:200px" placeholder="Project Notes" id="normal-field" [(ngModel)]="project.projectNote"
+                                                formControlName="projectNote">
                             </textarea>
-                                </div>
-                            </div>
-                            <div class="clearfix" style="padding-right:50px;">
-                                <div class="btn-toolbar pull-xs-right m-t-1">
-                                </div>
-                                <div class="btn-toolbar pull-xs-right m-t-1" style="padding-right:15px;">
-                                    <input type="submit" class="btn cld_contact_button cld_contact_button_width" (click)="saveProject()" value="SAVE">
+                                        </div>
+                                    </div>
+                                    <div class="clearfix" style="padding-right:50px;">
+                                        <div class="btn-toolbar pull-xs-right m-t-1">
+                                        </div>
+                                        <div class="btn-toolbar pull-xs-right m-t-1" style="padding-right:15px;">
+                                            <input type="submit" class="btn cld_contact_button cld_contact_button_width" (click)="saveProject()" value="SAVE">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
-            </form>  
-            </div>          
-            <div *ngIf ="tab2" id="divassignmanagement" style="margin-left:4%;padding-top:2%;">
+
+            </div>
+        </div>
+        <div *ngIf="tab2" id="divassignmanagement" style="margin-left:4%;padding-top:2%;">
             <assign-management></assign-management>
-            </div>
-            <div *ngIf ="tab3" id="divTask" style="margin-left:4%;padding-top:2%;">
+        </div>
+        <div *ngIf="tab3" id="divTask" style="margin-left:4%;padding-top:2%;">
             <task></task>
-            </div>
-            <div *ngIf ="tab4" id="divClientInfo" style="margin-left:4%;padding-top:2%;">
+        </div>
+        <div *ngIf="tab4" id="divClientInfo" style="margin-left:4%;padding-top:2%;">
             <client-info></client-info>
-            </div>
         </div>
     </div>
 </section>

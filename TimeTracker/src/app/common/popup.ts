@@ -8,8 +8,8 @@ declare var jQuery;
        <div class="modal fade iko_edit_user_model iko_edit_personal_model" [ngClass]="clsLoad" *ngIf="show" id="popupModal" [style.display]="display" (click)="clicked($event)">
             <div class="modal-dialog" [ngStyle]="{'max-width': width}">
              <div class="modal-content">
-                <header class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" (click)="hidePopup()">&times;</button> 
+                <header class="modal-header" style="background-color:#DA1A32;color:white;">
+                    <button type="button" class="close" data-dismiss="modal" (click)="hidePopup()" style="color:black;">&times;</button> 
                     <h4 class="modal-title text-xs-center fw-bold popup-title">{{title}}</h4>         
                 </header>
                 <div class="">

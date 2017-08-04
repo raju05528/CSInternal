@@ -1,6 +1,7 @@
 <div class="col-md-12">
-     <input type="button" class="btn cld_contact_button cld_contact_button_width" (click)="AddTask(taskModelDialog);" style="padding-top:0px !important;float:right;" value="Add Task"> 
-    
+    <input type="button" class="btn cld_contact_button cld_contact_button_width" (click)="AddTask(taskModelDialog);" style="padding-top:0px !important;float:right;"
+        value="Add Task">
+
     <table class="table">
         <thead>
             <tr>
@@ -33,10 +34,49 @@
                     Delete User
                 </td>
             </tr>
-           
+
         </tbody>
     </table>
 </div>
 <epopup #taskModelDialog [title]="title">
-<div>Test</div>
+    <div>
+        <form class="form-horizontal" role="form" [formGroup]="taskForm" style="margin-left:4%;padding-top:2%;">
+            <div class="row">
+                <div class="col-md-11 col-xs-11">
+                    <div style="width:100%;">
+                        <div class="form-group row">
+                            <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Task Name:</label>
+                            <div class="col-md-7 col-xs-12">
+                                <input maxlength="100" type="text" id="normal-field" [(ngModel)]="task.taskName" formControlName="taskName" [ngClass]="!taskForm.controls['taskName'].valid && !isPageLoad ? 'required-val':''"
+                                    class="form-control" placeholder="Task name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Status:</label>
+                            <div class="col-md-7 col-xs-12">
+                                <select class="form-control" [(ngModel)]="task.status">
+                                    <option value=''>-- Select status --</option>
+                                    <option value='0'>Active</option>
+                                    <option value='1'>InActive</option>
+                                    <option value='2'>Hold</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Task Description:</label>
+                            <div class="col-md-7 col-xs-12">
+                                <textarea style="background-color:white;width:100%;height:200px" placeholder="Task description" id="normal-field" [(ngModel)]="task.taskDescription"
+                                    formControlName="taskDescription">
+                            </textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="submit" class="btn cld_contact_button cld_contact_button_width" (click)="saveTask(taskModelDialog)" value="SAVE">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
 </epopup>

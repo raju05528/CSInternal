@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FormGroup, Validators, FormBuilder, FormControlName } from '@angular/forms';
 declare var jQuery: any;
 
 @Component({
@@ -8,13 +8,31 @@ declare var jQuery: any;
 
 })
 export class ClientInfo implements OnInit {
-    constructor() {
+    private clientInfoForm: FormGroup;
+    private clientInfo: any = {};
+    private isShow: boolean = false;
+    constructor(private formbuilder: FormBuilder) {
 
     }
-    ngOnInit(): void {       
-      
+    ngOnInit(): void {
+        this.clientInfoForm = this.formbuilder.group({
+            companyName: ['', Validators.required],
+            workPhone: ['', Validators.required],
+            ext: ['', Validators.required],
+            firstName: ['', Validators.required],
+            lastName: [''],
+            email: ['', Validators.required]
+        });
     }
-    AddEmployee(): void {}
+    onChange(index) {
+        if (index == 2)
+            this.isShow = true;
+        else
+            this.isShow = false;
+    }
+    onSubmit(): void {
+        this.isShow = false;
+     }
 
-    
+
 }
