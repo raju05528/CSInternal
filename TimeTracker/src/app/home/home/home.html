@@ -8,34 +8,31 @@
   </div>
 </div>
 <div class="container">
-<div class="centered" style="float: right;">   
-   <input type="submit" (click)="onSubmit()" name="submit" value="GetEmployeeDetails" [disabled]=""class="tcenter centered">
-</div>
+  <div class="btn-toolbar pull-xs-right m-t-1" style="padding-right:15px;float:right;">  
+    <input type="submit" (click)="onSubmit()" style="width:100% !important;" class="btn cld_contact_button cld_contact_button_width"  name="submit" value="GetEmployeeDetails" [disabled]="">
+  </div>
 </div>
 
 <section>
-<div class="container">
-
-  
-  <h2>Employee Related Information</h2>            
-<div >
-  <table class="table table-responsive" class="table table-bordered">
-    <thead>
-      <tr>
-        <th>FirstName</th>
-        <th>LastName</th>
-        <th>EmailId</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let rec of emplst">        
-        <td>{{rec.FirstName}}</td>
-        <td>{{rec.LastName}}</td>
-        <td>{{rec.EmailID }}</td>
-      </tr>
-   
-    </tbody>
-  </table>
-</div>
-</div>
+  <div class="container">
+    <h2>Employee Related Information</h2>
+    <div>
+      <table class="table table-responsive" class="table table-bordered">
+        <thead>
+          <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>EmailId</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let rec of emplst">
+            <td>{{rec.FirstName}}</td>
+            <td>{{rec.LastName}}</td>
+            <td>{{rec.EmailID }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </section>
