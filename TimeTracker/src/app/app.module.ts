@@ -9,10 +9,12 @@ import { ProjectModule } from './project/project.module';
 import { HomeModule } from './home/home.module';
 import { TimesheetComponent } from './timesheet/timesheet.component';
 import { TestshowModule } from './testshow/testshow.module';
+//import { EPopup } from './common/popup';
 @NgModule({
   declarations: [
     AppComponent,
     TimesheetComponent
+    //EPopup
    ],
   imports: [
     BrowserModule,

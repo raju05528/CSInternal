@@ -5,7 +5,7 @@ import { Routes } from '@angular/router';
 declare var System: any;
 
 export const ROUTES: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },      
-  { path: '', loadChildren: './layout/layout.module#LayoutModule' },
+  // { path: '', redirectTo: 'home', pathMatch: 'full' },      
+  // { path: '', loadChildren: './layout/layout.module#LayoutModule' },
   //...PROJECT_ROUTES 
 ];

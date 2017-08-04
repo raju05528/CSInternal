@@ -1,0 +1,42 @@
+<div class="col-md-12">
+     <input type="button" class="btn cld_contact_button cld_contact_button_width" (click)="AddTask(taskModelDialog);" style="padding-top:0px !important;float:right;" value="Add Task"> 
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Task Name</th>
+                <th>Task Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Task1
+                </td>
+                <td>
+                    Create Project
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Task2
+                </td>
+                <td>
+                    Add User
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Task3
+                </td>
+                <td>
+                    Delete User
+                </td>
+            </tr>
+           
+        </tbody>
+    </table>
+</div>
+<epopup #taskModelDialog [title]="title">
+<div>Test</div>
+</epopup>
