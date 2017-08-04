@@ -4,12 +4,14 @@ import { FormGroup, Validators, FormBuilder, FormControlName } from '@angular/fo
 import { NgClass } from '@angular/common';
 //import { Layout } from '../layout/layout.component';
 import { AssignManagementInfo } from '../assign-management/assign.component';
+import { ProjectService } from "../../home/home.service";
 declare var jQuery: any;
 
 @Component({
     selector: 'project-info',
     templateUrl: './project-info.html',
-    encapsulation: ViewEncapsulation.None
+    encapsulation: ViewEncapsulation.None,
+    providers: [ProjectService]
 
 })
 export class ProjectInfo implements OnInit {
