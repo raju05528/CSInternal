@@ -450,7 +450,6 @@ span.cld_active_logout_text{
     color: #DA1A32 !important;
 }
 
-
 .panel.with-nav-tabs .panel-heading{
     padding: 5px 5px 0 5px;
 }
@@ -467,21 +466,14 @@ span.cld_active_logout_text{
     border-radius: 0px;
     width: 100%;
     height: 46px;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     background-color: #DA1A32;
     color: #fff;
 }
 .cld_contact_button_width {
     width: 12% !important;
 }
-.cld_contact_button {
-    border-radius: 0px;
-    width: 100%;
-    height: 46px;
-    margin-top: 15px;
-    background-color: #DA1A32;
-    color: #fff;
-}
+
 .cld_about_tab {
     height: auto;
     /* max-width: 1293px; */

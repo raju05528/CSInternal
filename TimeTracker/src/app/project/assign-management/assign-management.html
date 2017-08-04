@@ -1,11 +1,18 @@
-<div class="col-md-7 col-xs-12">
-    <select class="form-control">
-        <option value='cs001'>Anil</option>
-        <option value='cs002'>Raju</option>
-        <option value='cs003'>Joshua</option>
-    </select>
-    <div class="btn-toolbar pull-xs-right m-t-1" style="padding-right:15px;">
-        <input type="submit" class="btn cld_contact_button cld_contact_button_width" (click)="AddEmployee()" value="Add">
+<div class="row">
+    <div class="col-md-10 col-xs-10">
+        <div class="form-group row">
+            <div class="col-md-4 col-xs-12 form-control-label text-md-right">
+                <select class="form-control">
+                    <option value='cs001'>Anil</option>
+                    <option value='cs002'>Raju</option>
+                    <option value='cs003'>Joshua</option>
+                    <option value='cs003'>Jagadeesh</option>
+                </select>
+            </div>
+            <div class="col-md-7 col-xs-12">
+                <input type="submit" class="btn cld_contact_button cld_contact_button_width" style="padding-top:0px !important;" (click)="AddEmployee()" value="Add">
+            </div>
+        </div>
     </div>
 </div>
 <div class="col-md-12">
@@ -13,11 +20,42 @@
         <thead>
             <tr>
                 <th>Employee Name</th>
-                <th>Active</th>                
+                <th>Active</th>
             </tr>
         </thead>
         <tbody>
-
+            <tr>
+                <td>
+                    Anil
+                </td>
+                <td>
+                    Active
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Raju
+                </td>
+                <td>
+                    Active
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Joshua
+                </td>
+                <td>
+                    Active
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Jagadeesh
+                </td>
+                <td>
+                    Active
+                </td>
+            </tr>
         </tbody>
     </table>
 </div>
