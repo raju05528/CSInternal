@@ -62,7 +62,7 @@ export class Home implements OnInit {
           for (var i = 0; i < empparsed.length; i++) {
             console.log('Employee FirstName : ' + empparsed[i].FirstName);
             console.log('Employee LastName : ' + empparsed[i].LastName);
-            console.log('Employee EmailID : ' + empparsed[i].EmailId);            
+            console.log('Employee EmailID : ' + empparsed[i].EmailID);            
           }
         }
       }
