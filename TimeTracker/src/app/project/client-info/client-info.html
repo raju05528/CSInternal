@@ -1,0 +1,80 @@
+<div class="container">
+  <form>
+    <label class="radio-inline">
+      <input type="radio" name="optradio" (change)="onChange(0)">No Client
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio" (change)="onChange(1)">Existing Client
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio" (change)="onChange(2)">New Client
+    </label>
+  </form>
+</div>
+
+<div *ngIf="isShow" style="border: 1px solid transparent;">
+  <form class="form-horizontal" role="form" [formGroup]="clientInfoForm" style="margin-left:4%;padding-top:3%;">
+    <div class="row">
+      <div class="col-md-10 col-xs-10">
+        <div style="width:100%;">
+          <div class="form-group row">
+            <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Company Name:</label>
+            <div class="col-md-7 col-xs-12">
+              <input maxlength="100" type="text" id="normal-field" [(ngModel)]="clientInfo.companyName" formControlName="companyName" [ngClass]="!clientInfoForm.controls['companyName'].valid && !isPageLoad ? 'required-val':''"
+                class="form-control" placeholder="Company name">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Work Phone no.:</label>
+            <div class="col-md-7 col-xs-12">
+              <input maxlength="100" type="text" id="normal-field" [(ngModel)]="clientInfo.workPhone" formControlName="workPhone" [ngClass]="!clientInfoForm.controls['workPhone'].valid && !isPageLoad ? 'required-val':''"
+                class="form-control" placeholder="Work phone no.">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Ext:</label>
+            <div class="col-md-7 col-xs-12">
+              <input maxlength="100" type="text" id="normal-field" [(ngModel)]="clientInfo.ext" formControlName="ext" [ngClass]="!clientInfoForm.controls['ext'].valid && !isPageLoad ? 'required-val':''"
+                class="form-control" placeholder="Ext">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div>
+      <label style="text-decoration: underline;font-size: 16px;color:#DA1A32;">Contact Person :</label>
+      <br>
+    </div>
+    <div class="row" style="padding-top:2%;">
+      <div class="col-md-10 col-xs-10">
+        <div style="width:100%;">
+          <div class="form-group row">
+            <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">First Name:</label>
+            <div class="col-md-7 col-xs-12">
+              <input maxlength="100" type="text" id="normal-field" [(ngModel)]="clientInfo.firstName" formControlName="firstName" [ngClass]="!clientInfoForm.controls['firstName'].valid && !isPageLoad ? 'required-val':''"
+                class="form-control" placeholder="First name">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Last Name:</label>
+            <div class="col-md-7 col-xs-12">
+              <input maxlength="100" type="text" id="normal-field" [(ngModel)]="clientInfo.lastName" formControlName="lastName" class="form-control"
+                placeholder="Last name">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Email:</label>
+            <div class="col-md-7 col-xs-12">
+              <input maxlength="100" type="text" id="normal-field" [(ngModel)]="clientInfo.email" formControlName="email" [ngClass]="!clientInfoForm.controls['email'].valid && !isPageLoad ? 'required-val':''"
+                class="form-control" placeholder="Email">
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+    <div class="modal-footer">
+        <input type="submit" class="btn cld_contact_button cld_contact_button_width" (click)="onSubmit()" value="Submit">
+      </div>
+  </form>
+</div>

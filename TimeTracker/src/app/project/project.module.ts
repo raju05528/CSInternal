@@ -4,6 +4,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { ProjectInfo } from './project-info/project-info.component';
  import { AssignManagementInfo } from './assign-management/assign.component';
+ import { TaskComponent } from './task/task.component';
+ import { ClientInfo } from './client-info/client-info.component';
+ import { EPopup } from '../common/popup';
 //import {Layout} from '../layout/layout.component';
 //import {LayoutModule} from '../layout/layout.module';
 
@@ -12,11 +15,14 @@ import { ProjectInfo } from './project-info/project-info.component';
         CommonModule
         , FormsModule
         , ReactiveFormsModule
-        , RouterModule     
+        , RouterModule 
     ],
     declarations: [
        ProjectInfo
        ,AssignManagementInfo
+       ,TaskComponent
+       ,ClientInfo
+       , EPopup    
     ]
 
 })

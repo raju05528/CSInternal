@@ -9,11 +9,12 @@ import { ProjectModule } from './project/project.module';
 import { HomeModule } from './home/home.module';
 import { TimesheetComponent } from './timesheet/timesheet.component';
 import { TestshowModule } from './testshow/testshow.module';
-import { MomentModule } from "angular2-moment";
+//import { EPopup } from './common/popup';
 @NgModule({
   declarations: [
     AppComponent,
     TimesheetComponent
+    //EPopup
    ],
   imports: [
     BrowserModule,
@@ -23,8 +24,7 @@ import { MomentModule } from "angular2-moment";
     HttpModule,
     ProjectModule,
     HomeModule,
-    TestshowModule,
-    MomentModule,
+    TestshowModule,    
     RouterModule.forRoot(ROUTES,{ useHash: false })
   ],
   providers: [],

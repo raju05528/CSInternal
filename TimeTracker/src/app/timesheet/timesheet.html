@@ -15,38 +15,69 @@
               <span><b>Approved By:</b></span> Williams J
             </div>
           </div>
-          <div class="col-md-12" style="margin-top:2%">
-            <div class="col-md-4">
-              <select class="form-control style-select" [(ngModel)]="selectedWeek" (change)="changeWeek($event.target)">                
-              <option *ngFor="let crweek of weeklst" [ngValue]="crweek"> {{crweek}} </option>
+         
+        </div>
+        <div class="col-md-12" style="margin-top:2%">
+           <div class="col-md-4">
+            <select class="form-control style-select">
+              <option *ngFor="let item of weeks" [value]="item.startDate" >
+                {{item.name}}
+              </option>                  
             </select>
-            </div>
-            <div class="col-md-8"></div>
-          </div>
-          <div class="col-md-12">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>Project</th>
-                  <th>Activiy</th>
-                  <th>Overtime</th>
-                  <th>
-                    <div>31</div>
-                    <div>Mon</div>
-                  </th>
-                  <th>
-                    <div>31</div>
-                    <div>Mon</div>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
 
+          </div>
+          <div class="col-md-8"></div>
+        </div>
+         <div class="col-md-12">
+           <form ng-submit="addTimeSheet()">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th>Project</th>
+                    <th>Activiy</th>                    
+                    <td *ngFor=" let day of days">
+                      {{day}}
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="week in weeklyTimeEntry">   
+                    <td>
+                       <select class="form-control style-select">
+                        <option *ngFor="let item of listProjects" [value]="item.id" >
+                          {{item.name}}
+                        </option>                  
+                      </select></td>
+                    <td>
+                       <select class="form-control style-select">
+                        <option *ngFor="let item of listActvity" [value]="item.id" >
+                          {{item.name}}
+                        </option>                  
+                      </select></td>
+                    <td>
+                        <input type="text" class="form-control" ng-model="week.Mon" required/></td>
+                    <td>
+                        <input type="text" class="form-control" ng-model="week.Tue" required/></td>
+                    <td>
+                        <input type="email" class="form-control" ng-model="week.Wed" required/></td>
+                    <td>
+                        <input type="text" class="form-control" ng-model="week.Thur" required/></td>
+                    <td>
+                        <input type="text" class="form-control" ng-model="week.Friday" required/></td>
+                    <td>
+                        <input type="email" class="form-control" ng-model="week.Sat" required/></td>
+                    <td>
+                        <input type="email" class="form-control" ng-model="week.Sun" required/></td>
+                  </tr>
               </tbody>
             </table>
-          </div>
-
-        </div>
+            </form>
+            <div class="form-group">
+                <!-- <input ng-hide="!personalDetails.length" type="button" class="btn btn-danger pull-right" ng-click="remove()" value="Remove"> -->
+                <input type="submit"  class="btn btn-primary addnew pull-right" value="Add New">
+            </div>
+         </div>
+        
       </div>
     </div>
   </div>

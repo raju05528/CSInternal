@@ -1,0 +1,94 @@
+{
+  "core-js": {
+    "bundle": "polyfills",
+    "version": "2.4.1"
+  },
+  "zone.js": {
+    "bundle": "polyfills",
+    "version": "0.7.6"
+  },
+  "@angular/platform-browser": {
+    "bundle": "vendor",
+    "version": "2.4.6"
+  },
+  "@angular/platform-browser-dynamic": {
+    "bundle": "vendor",
+    "version": "2.4.6"
+  },
+  "@angular/core": {
+    "bundle": "vendor",
+    "version": "2.4.6"
+  },
+  "@angular/common": {
+    "bundle": "vendor",
+    "version": "2.4.6"
+  },
+  "@angular/forms": {
+    "bundle": "vendor",
+    "version": "2.4.6"
+  },
+  "@angular/http": {
+    "bundle": "vendor",
+    "version": "2.4.6"
+  },
+  "@angular/router": {
+    "bundle": "vendor",
+    "version": "3.4.6"
+  },
+  "@angularclass/hmr": {
+    "bundle": "vendor",
+    "version": "1.2.2"
+  },
+  "rxjs": {
+    "bundle": "vendor",
+    "version": "5.0.2"
+  },
+  "moment": {
+    "bundle": "vendor",
+    "version": "2.15.1"
+  },
+  "ng2-bootstrap": {
+    "bundle": "vendor",
+    "version": "1.6.3"
+  },
+  "ng2-facebook-sdk": {
+    "bundle": "vendor",
+    "version": "1.2.0"
+  },
+  "angular-in-memory-web-api": {
+    "bundle": "vendor",
+    "version": "0.3.1"
+  },
+  "ng2-charts": {
+    "bundle": "vendor",
+    "version": "1.5.0"
+  },
+  "chart.js": {
+    "bundle": "vendor",
+    "version": "2.5.0"
+  },
+  "ng2-map": {
+    "bundle": "vendor",
+    "version": "0.16.5"
+  },
+  "ng2-datetime-picker": {
+    "bundle": "vendor",
+    "version": "0.9.10"
+  },
+  "angular2-infinite-scroll": {
+    "bundle": "vendor",
+    "version": "0.3.4"
+  },
+  "jquery": {
+    "bundle": "vendor",
+    "version": "3.2.1"
+  },
+  "slick-carousel": {
+    "bundle": "vendor",
+    "version": "1.6.0"
+  },
+  "ng2-recaptcha": {
+    "bundle": "vendor",
+    "version": "1.7.0"
+  }
+}
