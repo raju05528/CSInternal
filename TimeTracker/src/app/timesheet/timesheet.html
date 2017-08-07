@@ -1,5 +1,6 @@
-<div class="container">
-  <div style="margin-top:3%;margin-left:6%">
+
+<div class="container" style= "width: 1300px; !important">
+  <div style="margin-top:3%;">
     <div class="panel-group">
       <div class="panel panel-default">
         <div class="panel-heading">View/Edit Timesheet</div>
@@ -15,11 +16,11 @@
               <span><b>Approved By:</b></span> Williams J
             </div>
           </div>
-         
-        </div>
+
+          
         <div class="col-md-12" style="margin-top:2%">
            <div class="col-md-4">
-            <select class="form-control style-select">
+            <select class="style-select">
               <option *ngFor="let item of weeks" [value]="item.startDate" >
                 {{item.name}}
               </option>                  
@@ -29,7 +30,7 @@
           <div class="col-md-8"></div>
         </div>
          <div class="col-md-12">
-           <form ng-submit="addTimeSheet()">
+           <form ng-submit="()">
             <table class="table">
                 <thead>
                   <tr>
@@ -38,45 +39,66 @@
                     <td  *ngFor=" let day of days" class="col-md-12">
                       {{day}}
                     </td>
+                    <td>Total</td>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr ng-repeat="week in weeklyTimeEntry">   
+                  <tr *ngFor=" let week of weeklyTimeEntry;let i = index">   
                     <td>
-                       <select class="form-control style-select">
+                       <select class="style-select">
                         <option *ngFor="let item of listProjects" [value]="item.id" >
                           {{item.name}}
                         </option>                  
                       </select></td>
                     <td>
-                       <select class="form-control style-select">
+                       <select class=" style-select">
                         <option *ngFor="let item of listActvity" [value]="item.id" >
                           {{item.name}}
                         </option>                  
                       </select></td>
                     <td>
-                        <input type="text" class="form-control" ng-model="week.Mon" required/></td>
+                        <input type="time" class="input-time" name="day1hrs{{i}}" [(ngModel)]="week.day1hrs" ></td>
                     <td>
-                        <input type="text" class="form-control" ng-model="week.Tue" required/></td>
+                        <input type="time" class="input-time" name="day2hrs{{i}}" [(ngModel)]="week.day2hrs" ></td>
                     <td>
-                        <input type="email" class="form-control" ng-model="week.Wed" required/></td>
+                        <input type="time" class="input-time" name="day3hrs{{i}}" [(ngModel)]="week.day3hrs" ></td>
                     <td>
-                        <input type="text" class="form-control" ng-model="week.Thur" required/></td>
+                        <input type="time" class="input-time" name="day4hrs{{i}}" [(ngModel)]="week.day4hrs" ></td>
                     <td>
-                        <input type="text" class="form-control" ng-model="week.Friday" required/></td>
+                        <input type="time" class="input-time" name="day5hrs{{i}}" [(ngModel)]="week.day5hrs" ></td>
                     <td>
-                        <input type="email" class="form-control" ng-model="week.Sat" required/></td>
+                        <input type="time" class="input-time" name="day6hrs{{i}}" [(ngModel)]="week.day6hrs" ></td>
                     <td>
-                        <input type="email" class="form-control" ng-model="week.Sun" required/></td>
+                        <input type="time" class="input-time" name="day7hrs{{i}}" [(ngModel)]="week.day7hrs" ></td>
+                    <td>
+                        <input type="text" disabled class="input-time" name="tHrsForProject{{i}}" [(ngModel)]="week.tHrsForProject" ></td>
                   </tr>
-              </tbody>
+                </tbody>
+                <tfoot>
+                <tr>
+                  <td></td>
+                  <td>Total Hours</td>
+                  <td>9:00</td>
+                  <td>9:00</td>
+                  <td>9:00</td>
+                  <td>9:00</td>
+                  <td>9:00</td>
+                  <td>00:00</td>
+                  <td>00:00</td>
+                  <td>45:00</td>
+                </tr>
+              </tfoot>
             </table>
             </form>
             <div class="form-group">
                 <!-- <input ng-hide="!personalDetails.length" type="button" class="btn btn-danger pull-right" ng-click="remove()" value="Remove"> -->
-                <input type="submit"  class="btn btn-primary addnew pull-right" value="Add New">
+                <input   class="btn cld_contact_button cld_contact_button_width" (click)="addTimeSheet()" value="Add New">
+                <input   class="btn cld_contact_button cld_contact_button_width" (click)="addTimeSheet()" value="Save For Later">
+                <input   class="btn cld_contact_button cld_contact_button_width" (click)="addTimeSheet()" value="Submit">
             </div>
          </div>
+         
+        </div>
         
       </div>
     </div>
