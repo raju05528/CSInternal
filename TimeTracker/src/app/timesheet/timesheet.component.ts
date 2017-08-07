@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectService } from "../home/home.service";
-import { MomentModule } from 'angular2-moment';
+import { FormsModule }   from '@angular/forms';  
 import * as moment from 'moment'; 
 
 @Component({
@@ -8,21 +8,16 @@ import * as moment from 'moment';
   templateUrl: './timesheet.html',
   providers: [ProjectService]
 })
+
+
 export class TimesheetComponent implements OnInit {
    countries: any  = [];
    weeks:any=[];
    days:any=[];
-   weeklyTimeEntry:any=[
-     {
-       'Mon':'',
-       'Tue':'',
-       'Wed':'',
-       'Thur':'',
-       'Friday':'',
-       'Sat':'',
-       'Sun':''       
-     }
-   ];
+   currentTimeEntry:any={};
+   weeklyTimeEntry:any=[];
+
+   
    listProjects:any=[
                    {
                       'id':'1',
@@ -49,10 +44,30 @@ export class TimesheetComponent implements OnInit {
        this.getWeeksList();
        this.getDaysInBetweenDays(0);
        this.getTimeEntryByWeek('msi1256',this.formatDate(this.currentWeekStart));
+       this.weeklyTimeEntry.push({
+            'projectId':'',
+            'taskId':'',
+            'day1hrs':'2',       
+            'day1note':'',       
+            'day2hrs':'2',
+            'day2note':'',  
+            'day3hrs':'2',
+            'day3note':'',  
+            'day4hrs':'2',
+            'day4note':'',  
+            'day5hrs':'2',
+            'day5note':'',  
+            'day6hrs':'2' ,
+            'day6note':'',  
+            'day7hrs':'2',  
+            'day7note':'',
+            'tHrsForProject':''
+          }
+        )
       }
 
     getWeeksList() {
-     // Since no month has fewer than 28 days  
+     
        let currentWeek=this.currentWeekStart;      
        this.weeks.push({startDate : this.formatDate(currentWeek), name : "Current Week" })
        for(var i=0; i<this.maxweeks; i++)
@@ -81,7 +96,7 @@ export class TimesheetComponent implements OnInit {
    var weekStart = this.currentDate.clone().subtract(numWeek, 'week').startOf('isoWeek');
    //var weekEnd = this.currentDate.clone().subtract(numWeek, 'week').endOf('isoWeek');
     for (var i = 0; i <= 6; i++) {
-        this.days.push(moment(weekStart).add(i, 'days').format("Do ddd, MMM"));
+        this.days.push(moment(weekStart).add(i, 'days').format("Do MMM, ddd "));
     };
     return this.days;
   }
@@ -90,9 +105,27 @@ export class TimesheetComponent implements OnInit {
       //get all time en
   }
   
-  addTimeSheet(){
+   addTimeSheet(){
+    console.log(this.weeklyTimeEntry );
     this.weeklyTimeEntry.push({
-
+        'projectId':'',
+       'taskId':'',
+       'day1hrs':'',       
+       'day1note':'',       
+       'day2hrs':'',
+       'day2note':'',  
+       'day3hrs':'',
+       'day3note':'',  
+       'day4hrs':'',
+       'day4note':'',  
+       'day5hrs':'',
+       'day5note':'',  
+       'day6hrs':'' ,
+       'day6note':'',  
+       'day7hrs':'',  
+       'day7note':'',
+       'tHrsForProject':''
     });
+
   }
 }
