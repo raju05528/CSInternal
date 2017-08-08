@@ -33,6 +33,8 @@ export class ClientInfo implements OnInit {
     onSubmit(): void {
         this.isShow = false;
      }
-
+    SaveNextClientInfo(){
+        
+    }
 
 }

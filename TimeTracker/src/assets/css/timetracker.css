@@ -450,6 +450,14 @@ span.cld_active_logout_text{
     color: #DA1A32 !important;
 }
 
+a.cld_header_list:hover{
+   background-color: #fff  !important;
+   color:#DA1A32;
+}
+.cld_service_cl01 .nav-tabs>li.active>a:hover{
+     background-color:#DA1A32 !important;
+}
+
 .panel.with-nav-tabs .panel-heading{
     padding: 5px 5px 0 5px;
 }
