@@ -52,12 +52,12 @@ export class Home implements OnInit {
       var emprecs = data;
       console.log('---------------Employee details------------------'+JSON.stringify(emprecs));
       for (var emp in emprecs) {
-        console.log('emp : '+emp);
+        //console.log('emp : '+emp);
         if (emp == "recordset") {
           var empparsed = emprecs[emp];
-          console.log('empparsed : '+JSON.stringify(empparsed));
+          //console.log('empparsed : '+JSON.stringify(empparsed));
           this.emplst=emprecs[emp];    
-          console.log('this.emplst : '+JSON.stringify(this.emplst));     
+          //console.log('this.emplst : '+JSON.stringify(this.emplst));     
         }
       }
     })
