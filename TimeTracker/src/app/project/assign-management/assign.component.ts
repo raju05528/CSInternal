@@ -12,6 +12,7 @@ export class AssignManagementInfo implements OnInit {
   public emplst: any = [];
   public assgnmemlst:any=[];
   public ddlEmployeeID: any;
+  public ddlEmployeeName:any;
   public ddlEmpID: any;
   constructor(private projectService: ProjectService) {
   }
@@ -47,7 +48,7 @@ export class AssignManagementInfo implements OnInit {
       var emprecs = resdata;
       console.log('---------------Employee details------------------');
       console.log('getSelectedEmployees response data : '+JSON.stringify(emprecs));
-for (var emp in emprecs) {
+        for (var emp in emprecs) {
         if (emp == "recordset") {
           var empparsed = emprecs[emp];
           this.assgnmemlst = emprecs[emp];
@@ -61,10 +62,10 @@ for (var emp in emprecs) {
 
   }
   changeEmployee(emp) {
-    console.log('emp : ' + emp);
-    this.ddlEmployeeID = emp;
+    console.log('emp : ' + JSON.stringify(emp));
+    this.ddlEmployeeID = emp.Employee_Id;
+    this.ddlEmployeeName=emp.EmployeeName;
     console.log('ddlEmployeeID : ' + this.ddlEmployeeID);
+    console.log('ddlEmployeeID : ' + this.ddlEmployeeName);
   }
-
-
 }
