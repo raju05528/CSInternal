@@ -95,7 +95,6 @@ export class ProjectInfo implements OnInit {
             'startDate': this.projectForm.value.startDate,
             'endDate': this.projectForm.value.endDate,
             'projectNote': this.projectForm.value.projectNote
-
         }
         this.tab1 = false;
         this.tab2 = true;

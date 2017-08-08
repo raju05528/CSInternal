@@ -140,12 +140,12 @@
             </div>
         </div>
         <div *ngIf="tab2" id="divClientInfo" style="margin-left:4%;padding-top:2%;">
-            <client-info></client-info>
-        </div>       
+            <client-info [projectData]="project" [tab1]="tab1" [tab2]="tab2" [tab3]="tab3" [tab4]="tab4"></client-info>
+        </div>
         <div *ngIf="tab3" id="divTask" style="margin-left:4%;padding-top:2%;">
             <task></task>
         </div>
-         <div *ngIf="tab4" id="divassignmanagement" style="margin-left:4%;padding-top:2%;">
+        <div *ngIf="tab4" id="divassignmanagement" style="margin-left:4%;padding-top:2%;">
             <assign-management></assign-management>
         </div>
     </div>

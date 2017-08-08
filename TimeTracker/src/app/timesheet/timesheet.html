@@ -70,22 +70,24 @@
                         <input type="time" class="input-time" name="day6hrs{{i}}" [(ngModel)]="week.day6hrs" ></td>
                     <td>
                         <input type="time" class="input-time" name="day7hrs{{i}}" [(ngModel)]="week.day7hrs" ></td>
+                    
                     <td>
-                        <input type="text" disabled class="input-time" name="tHrsForProject{{i}}" [(ngModel)]="week.tHrsForProject" ></td>
+                      {{ getTotalWrkHrsForProjects(week) }}</td> 
+                        <!-- <input type="text" disabled class="input-time" name="tHrsForProject{{i}}" [(ngModel)]="week.tHrsForProject" ></td> -->
                   </tr>
                 </tbody>
                 <tfoot>
                 <tr>
                   <td></td>
                   <td>Total Hours</td>
-                  <td>9:00</td>
-                  <td>9:00</td>
-                  <td>9:00</td>
-                  <td>9:00</td>
-                  <td>9:00</td>
-                  <td>00:00</td>
-                  <td>00:00</td>
-                  <td>45:00</td>
+                  <td>{{ getTotalByDays(1) }}</td>
+                  <td>{{ getTotalByDays(2) }}</td>
+                  <td>{{ getTotalByDays(3) }}</td>
+                  <td>{{ getTotalByDays(4) }}</td>
+                  <td>{{ getTotalByDays(5) }}</td>
+                  <td>{{ getTotalByDays(6) }}</td>
+                  <td>{{ getTotalByDays(7) }}</td>
+                  <td>{{ getTotalWeekWorkHours() }}</td>
                 </tr>
               </tfoot>
             </table>
