@@ -1,38 +1,37 @@
-<div class=container>
-  <div style="margin-top:5%;">
-    <div style="display: block;width:20%;height:30%">
-      <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType" [colors]="chartColors" (chartHover)="chartHovered($event)"
-        (chartClick)="chartClicked($event)"> </canvas>
+<div class="container" style="margin-top:5%;">
+  <div class="row">
+    <div class="col-md-4 col-xs-4">
+      <div >
+        <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType" [colors]="chartColors" (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)"> </canvas>
+      </div>
+      <div><b>Time Sheet for the week:{{showWeek}}</b> </div>
     </div>
-    <div><b>Time Sheet for the week:{{showWeek}}</b> </div>
-  </div>
-</div>
-<div class="container">
-  <div class="btn-toolbar pull-xs-right m-t-1" style="padding-right:15px;float:right;">  
-    <input type="submit" (click)="onSubmit()" style="width:100% !important;" class="btn cld_contact_button cld_contact_button_width"  name="submit" value="GetEmployeeDetails" [disabled]="">
-  </div>
-</div>
+    <div class="col-md-8 col-xs-8">
+     
+        <div>
+          <h2>Employee Related Information</h2>
+          <div>
+            <table class="table table-responsive" class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>FirstName</th>
+                  <th>LastName</th>
+                  <th>EmailId</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let rec of emplst">
+                  <td>{{rec.FirstName}}</td>
+                  <td>{{rec.LastName}}</td>
+                  <td>{{rec.EmailID }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      
+    </div>
 
-<section>
-  <div class="container">
-    <h2>Employee Related Information</h2>
-    <div>
-      <table class="table table-responsive" class="table table-bordered">
-        <thead>
-          <tr>
-            <th>FirstName</th>
-            <th>LastName</th>
-            <th>EmailId</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let rec of emplst">
-            <td>{{rec.FirstName}}</td>
-            <td>{{rec.LastName}}</td>
-            <td>{{rec.EmailID }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
   </div>
-</section>
+</div>

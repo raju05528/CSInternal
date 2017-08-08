@@ -3,7 +3,7 @@
         <div class="form-group row">
             <div class="col-md-4 col-xs-12 form-control-label text-md-right">
                 <select [(ngModel)]="selectedEmployee" class="form-control" (change)="changeEmployee(selectedEmployee)"> 
-                    <option *ngFor="let emp of emplst" id="ddlEmp" [ngValue]="emp.Employee_Id">{{emp.FirstName}}</option>                    
+                    <option *ngFor="let emp of emplst" id="ddlEmp" [ngValue]="emp">{{emp.FirstName}}</option>                    
                 </select>
             </div>
             <div class="col-md-7 col-xs-12">

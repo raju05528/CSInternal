@@ -14,16 +14,26 @@ module.exports = class Timesheet {
                 cldLog.logInfo('inside getconnection err');
             }
             if(req)
-                {                   
-                  req.query("SELECT * FROM Employee", function (err,recs) {
-                        if (err) {
+                {        
+                    
+                    req.execute("Usp_GetEmployeeDetails").then(function (recordSet) {            
+                            console.log('recordSet : '+JSON.stringify(recordSet));
+                            db_connect.closeConnection();
+                            callback(null,recordSet);
+                        }).catch(function (err) {                            
                             console.log(err);
-                        }
-                        else {  
-                            db_connect.closeConnection();                                                                                  
-                            callback(null,recs);
-                        }                       
-                    });                 
+                            db_connect.closeConnection();
+                        });
+                    
+                //   req.query("SELECT * FROM Employee", function (err,recs) {
+                //         if (err) {
+                //             console.log(err);
+                //         }
+                //         else {  
+                //             db_connect.closeConnection();                                                                                  
+                //             callback(null,recs);
+                //         }                       
+                //     });                 
                 }
        });   
    }

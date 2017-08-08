@@ -3,6 +3,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { FormGroup, Validators, FormBuilder, FormControlName } from '@angular/forms';
 import { NgClass } from '@angular/common';
 import { ProjectService } from '../home.service';
+import {MomentModule} from 'angular2-moment'
 //import { Layout } from '../layout/layout.component';
 
 declare var jQuery: any;
@@ -45,32 +46,24 @@ export class Home implements OnInit {
   public chartHovered(e: any): void {
     console.log(e);
   }
-  ngOnInit(): void {
+  ngOnInit(): any {
+    this.projectService.getAllEmployees().subscribe((data) => {
+      //data is your employee list      
+      var emprecs = data;
+      console.log('---------------Employee details------------------');
+      for (var emp in emprecs) {
+        if (emp == "recordset") {
+          var empparsed = emprecs[emp];
+          this.emplst=emprecs[emp];         
+        }
+      }
+    })
 
   }
   saveProject(): void { }
 
   onSubmit(): any {
-    this.projectService.getAllEmployees().subscribe((data) => {
-      //data is your employee list      
-      var emprecs = data;
-      console.log('---------------Employee details------------------');
-
-      for (var emp in emprecs) {
-        if (emp == "recordset") {
-          var empparsed = emprecs[emp];
-          this.emplst=emprecs[emp];
-          console.log('emp object : '+JSON.stringify(this.emplst));
-          for (var i = 0; i < empparsed.length; i++) {                        
-            console.log('Employee FirstName : ' + empparsed[i].FirstName);
-            console.log('Employee LastName : ' + empparsed[i].LastName);
-            console.log('Employee EmailID : ' + empparsed[i].EmailID);  
-            console.log('Employee EmailID : ' + empparsed[i].Employee_Id);  
-
-          }
-        }
-      }
-    })
+    
   }
 
 
