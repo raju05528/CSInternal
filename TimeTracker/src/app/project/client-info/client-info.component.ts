@@ -4,13 +4,19 @@ declare var jQuery: any;
 
 @Component({
     selector: 'client-info',
-    templateUrl: './client-info.html'
-
+    templateUrl: './client-info.html',
+    inputs: ['projectData', 'tab1', 'tab2', 'tab3', 'tab4']
 })
 export class ClientInfo implements OnInit {
     private clientInfoForm: FormGroup;
     private clientInfo: any = {};
     private isShow: boolean = false;
+    private projectData: any;
+    private tab1:boolean;
+    private tab2:boolean;
+    private tab3:boolean;
+    private tab4:boolean;
+
     constructor(private formbuilder: FormBuilder) {
 
     }
@@ -30,9 +36,21 @@ export class ClientInfo implements OnInit {
         else
             this.isShow = false;
     }
-    onSubmit(): void {
-        this.isShow = false;
-     }
-
-
+    // onSubmit(): void {
+    //     this.isShow = false;
+    // }
+    SaveNextClientInfo() {
+        this.clientInfo = {
+            'clientId': '0',
+            'companyName': this.clientInfoForm.value.companyName,
+            'workPhone': this.clientInfoForm.value.workPhone,
+            'ext': this.clientInfoForm.value.ext,
+            'firstName': this.clientInfoForm.value.firstName,
+            'startDate': this.clientInfoForm.value.startDate,
+            'lastName': this.clientInfoForm.value.lastName,
+            'email': this.clientInfoForm.value.email
+        }        
+    }
+    BackToClientInfo() {       
+    }
 }

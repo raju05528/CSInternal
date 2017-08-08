@@ -17,16 +17,19 @@ declare var jQuery: any;
 export class ProjectInfo implements OnInit {
     private projectForm: FormGroup;
     router: Router;
-    private isShow :boolean = true;
-    private isShowProject:boolean =false;
+    private isShow: boolean = true;
+    private isShowProject: boolean = false;
     private project: any = {};
+    ddlStatus: any;
+    ddlType: any;
+
     private tab1: boolean = true;
     private tab2: boolean = false;
     private tab3: boolean = false;
     private tab4: boolean = false;
     private tab5: boolean = false;
     private tab6: boolean = false;
-    
+
     constructor(private route: ActivatedRoute
         , private formbuilder: FormBuilder, router: Router) {
         this.router = router;
@@ -36,21 +39,19 @@ export class ProjectInfo implements OnInit {
 
         this.projectForm = this.formbuilder.group({
             name: ['', Validators.required],
+            status: [''],
+            type: [''],
             projectNote: [''],
-            startDateTime:[''],
-            endDateTime:[''],
-            manager:['']
+            startDate: [''],
+            endDate: [''],
+            manager: ['']
         });
-      
-    }
-    saveProject(): void {
-        this.isShow =true;
-        this.isShowProject =false;
+
     }
 
-    AddProject(): void { 
-        this.isShow =false;
-        this.isShowProject =true;
+    AddProject(): void {
+        this.isShow = false;
+        this.isShowProject = true;
     }
 
     public onTabClick(index: number) {
@@ -65,16 +66,42 @@ export class ProjectInfo implements OnInit {
             vm.tab1 = true;
         } else if (index == 1) {
             vm.tab2 = true;
-            vm.isShowProject =false;
+            vm.isShowProject = false;
         } else if (index == 2) {
             vm.tab3 = true;
-            vm.isShowProject =false;
+            vm.isShowProject = false;
         } else if (index == 3) {
             vm.tab4 = true;
-            vm.isShowProject =false;
-        } else if (index == 4) {
-            vm.tab5 = true;
-            vm.isShowProject =false;
+            vm.isShowProject = false;
         }
+    }
+    ChangeStatus(statusVal) {
+        console.log('before:' + statusVal)
+        this.ddlStatus = statusVal;
+        console.log('after:' + this.ddlStatus)
+    }
+
+    ChangeType(typeVal) {
+        this.ddlType = typeVal;
+    }
+
+    SaveNextProject(): void {
+        this.project = {
+            'projectId': '0',
+            'name': this.projectForm.value.name,
+            'status': this.projectForm.value.status,
+            'manager': this.projectForm.value.manager,
+            'type': this.projectForm.value.type,
+            'startDate': this.projectForm.value.startDate,
+            'endDate': this.projectForm.value.endDate,
+            'projectNote': this.projectForm.value.projectNote
+        }
+        this.tab1 = false;
+        this.tab2 = true;
+        // this.isShowProject = false;
+    }
+    BackToProject() {
+        this.tab1 = true;
+        this.tab2 = false;
     }
 }

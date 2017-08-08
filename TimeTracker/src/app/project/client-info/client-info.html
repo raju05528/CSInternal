@@ -9,7 +9,7 @@
     <label class="radio-inline">
       <input type="radio" name="optradio" (change)="onChange(2)">New Client
     </label>
-  </form>
+  </form> 
 </div>
 
 <div *ngIf="isShow" style="border: 1px solid transparent;">
@@ -71,10 +71,17 @@
             </div>
           </div>
         </div>
-      </div>      
-    </div>
-    <div class="modal-footer">
-        <input type="submit" class="btn cld_contact_button cld_contact_button_width" (click)="onSubmit()" value="Submit">
       </div>
+    </div>    
   </form>
 </div>
+<div class="clearfix" style="padding-right:50px;">
+    <div class="btn-toolbar pull-xs-right m-t-1" style="padding-right:4%;float:right;">
+      <div style="float:left;padding-right:2%;">
+        <input type="button" class="btn cld_contact_button" (click)="BackToClientInfo()" value="Back">
+      </div>
+      <div style="float:left;">
+        <input type="submit" class="btn cld_contact_button" (click)="SaveNextClientInfo()" value="Next">
+      </div>
+    </div>
+  </div>

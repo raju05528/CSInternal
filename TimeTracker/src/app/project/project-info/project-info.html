@@ -12,15 +12,15 @@
 
                 </li>
                 <li [ngClass]="{ 'active': tab2}">
-                    <a class="cld_header_list" data-toggle="tab" (click)="onTabClick(1)">Member Assignment</a>
-
+                    <a class="cld_header_list" data-toggle="tab" (click)="onTabClick(1)">Client Info</a>
                 </li>
                 <li [ngClass]="{ 'active': tab3}">
                     <a class="cld_header_list" data-toggle="tab" (click)="onTabClick(2)">Task</a>
 
                 </li>
                 <li [ngClass]="{ 'active': tab4}">
-                    <a class="cld_header_list" data-toggle="tab" (click)="onTabClick(3)">Client Info</a>
+                    <a class="cld_header_list" data-toggle="tab" (click)="onTabClick(3)">Member Assignment</a>
+
                 </li>
             </ul>
         </div>
@@ -81,24 +81,24 @@
                                     <div class="form-group row">
                                         <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Status:</label>
                                         <div class="col-md-7 col-xs-12">
-                                            <select class="form-control">
-                                    <option value='0'>Active</option>
-                                    <option value='1'>InActive</option>
-                                    <option value='2'>Hold</option>
+                                            <select class="form-control" [(ngModel)]="status" formControlName="status" (change)="ChangeStatus($event.target)">
+                                    <option value='1'>Active</option>
+                                    <option value='2'>InActive</option>
+                                    <option value='3'>Hold</option>
                                 </select>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Manager:</label>
                                         <div class="col-md-7 col-xs-12">
-                                            <input maxlength="100" type="text" id="normal-field" [(ngModel)]="project.manager" formControlName="name" [ngClass]="!projectForm.controls['manager'].valid && !isPageLoad ? 'required-val':''"
+                                            <input maxlength="100" type="text" id="normal-field" [(ngModel)]="project.manager" formControlName="manager" [ngClass]="!projectForm.controls['manager'].valid && !isPageLoad ? 'required-val':''"
                                                 class="form-control" placeholder="Manager">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Type:</label>
                                         <div class="col-md-7 col-xs-12">
-                                            <select class="form-control">
+                                            <select class="form-control" [(ngModel)]="type" formControlName="type" (change)="ChangeType($event.target)">
                                     <option value='bill'>Bill</option>
                                     <option value='internal'>Internal</option>
                                 </select>
@@ -108,14 +108,14 @@
                                         <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">Start Date:</label>
                                         <div class="col-md-7 col-xs-12">
                                             <p class="input-group">
-                                                <input type="date" [(ngModel)]="project.startDate" class="filterDate iko_backoffice_cursor" formControlName="startDateTime">
+                                                <input type="date" [(ngModel)]="project.startDate" class="filterDate iko_backoffice_cursor" formControlName="startDate">
                                             </p>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="normal-field" class="col-md-4 col-xs-12 form-control-label text-md-right">End Date:</label>
                                         <div class="col-md-7 col-xs-12">
-                                            <input type="date" [(ngModel)]="project.endDate" class="filterDate iko_backoffice_cursor" formControlName="endDateTime">
+                                            <input type="date" [(ngModel)]="project.endDate" class="filterDate iko_backoffice_cursor" formControlName="endDate">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -127,10 +127,8 @@
                                         </div>
                                     </div>
                                     <div class="clearfix" style="padding-right:50px;">
-                                        <div class="btn-toolbar pull-xs-right m-t-1">
-                                        </div>
-                                        <div class="btn-toolbar pull-xs-right m-t-1" style="padding-right:15px;">
-                                            <input type="submit" class="btn cld_contact_button cld_contact_button_width" (click)="saveProject()" value="SAVE">
+                                        <div class="btn-toolbar pull-xs-right m-t-1" style="padding-right:4%;float:right;">
+                                            <input type="submit" class="btn cld_contact_button" (click)="SaveNextProject()" value="Next">
                                         </div>
                                     </div>
                                 </div>
@@ -141,14 +139,14 @@
 
             </div>
         </div>
-        <div *ngIf="tab2" id="divassignmanagement" style="margin-left:4%;padding-top:2%;">
-            <assign-management></assign-management>
+        <div *ngIf="tab2" id="divClientInfo" style="margin-left:4%;padding-top:2%;">
+            <client-info [projectData]="project" [tab1]="tab1" [tab2]="tab2" [tab3]="tab3" [tab4]="tab4"></client-info>
         </div>
         <div *ngIf="tab3" id="divTask" style="margin-left:4%;padding-top:2%;">
             <task></task>
         </div>
-        <div *ngIf="tab4" id="divClientInfo" style="margin-left:4%;padding-top:2%;">
-            <client-info></client-info>
+        <div *ngIf="tab4" id="divassignmanagement" style="margin-left:4%;padding-top:2%;">
+            <assign-management></assign-management>
         </div>
     </div>
 </section>
