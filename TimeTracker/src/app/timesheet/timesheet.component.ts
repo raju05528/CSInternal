@@ -16,8 +16,10 @@ export class TimesheetComponent implements OnInit {
    days:any=[];
    currentTimeEntry:any={};
    weeklyTimeEntry:any=[];
-
-   
+  // totalHours:any=[];
+    totalHours: any = {};
+    
+    
    listProjects:any=[
                    {
                       'id':'1',
@@ -47,23 +49,33 @@ export class TimesheetComponent implements OnInit {
        this.weeklyTimeEntry.push({
             'projectId':'',
             'taskId':'',
-            'day1hrs':'2',       
+            'day1hrs':'',       
             'day1note':'',       
-            'day2hrs':'2',
+            'day2hrs':'',
             'day2note':'',  
-            'day3hrs':'2',
+            'day3hrs':'',
             'day3note':'',  
-            'day4hrs':'2',
+            'day4hrs':'',
             'day4note':'',  
-            'day5hrs':'2',
+            'day5hrs':'',
             'day5note':'',  
-            'day6hrs':'2' ,
+            'day6hrs':'' ,
             'day6note':'',  
-            'day7hrs':'2',  
+            'day7hrs':'',  
             'day7note':'',
             'tHrsForProject':''
-          }
-        )
+          });
+        
+        
+       this.totalHours=
+            {'day1hrs': 0,
+            'day2hrs': 0,
+            'day3hrs': 0,
+            'day4hrs': 0,
+            'day5hrs': 0,
+            'day6hrs': 0,
+            'day7hrs': 0} ;
+   
       }
 
     getWeeksList() {
@@ -90,9 +102,10 @@ export class TimesheetComponent implements OnInit {
 
     return [year, month, day].join('-');
  }
+
  
  getDaysInBetweenDays(numWeek){
-   console.log('test week number:'+numWeek);
+   
    var weekStart = this.currentDate.clone().subtract(numWeek, 'week').startOf('isoWeek');
    //var weekEnd = this.currentDate.clone().subtract(numWeek, 'week').endOf('isoWeek');
     for (var i = 0; i <= 6; i++) {
@@ -126,6 +139,85 @@ export class TimesheetComponent implements OnInit {
        'day7note':'',
        'tHrsForProject':''
     });
+
+  }
+
+  calculateWorkHoursForWeek=function(projectHrs){    
+    let hrs:any=[];
+    var total=0;
+        for(var i=1;i<=7;i++)
+            {
+                if(projectHrs['day'+i+'hrs']!='')
+                    {
+                        hrs.push(projectHrs['day'+i+'hrs']);
+                    }
+            }
+            hrs.forEach(element => {
+                if(total==0){
+                        total=element;
+                    }else{                      
+                      total=this.sumProjectWokrHours(total,element);
+                    }
+            });
+        return total;
+  }
+
+
+  getTotalWrkHrsForProjects= function(projectHrs){
+   return this.calculateWorkHoursForWeek(projectHrs);     
+  }
+
+  getTotalWeekWorkHours(){
+     return this.calculateWorkHoursForWeek(this.totalHours);
+  }
+  
+  sumProjectWokrHours = function(total,dayhrs){
+      var hour = 0;
+      var minute=0;
+      var splitTime1= total.split(':');
+      var splitTime2= dayhrs.split(':');
+       hour = parseInt(splitTime1[0])+parseInt(splitTime2[0]);
+       minute=parseInt(splitTime1[1])+parseInt(splitTime2[1]);
+       hour = hour + Math.floor(minute/60);
+       minute = minute%60;
+       return this.pad(hour)+':'+this.pad(minute);
+  }
+
+    pad = function(num) {
+    if(num < 10) {
+        return "0" + num;
+    } else {
+        return "" + num;
+    }
+  }
+  
+ getTotalByDays = function(day){
+    var total = 0;
+    //this.totalHours=[];
+   // console.log(this.weeklyTimeEntry)
+    for(var i = 0; i < this.weeklyTimeEntry.length; i++){
+        var weekTime = this.weeklyTimeEntry[i];
+        var dayhrs='day'+day+'hrs';  
+        if(this.weeklyTimeEntry[i][dayhrs].toString()!='')   
+        {  
+          if(total!=0) 
+             {total=this.addTimes(total,this.weeklyTimeEntry[i][dayhrs].toString());}
+          else{
+            total=this.weeklyTimeEntry[i][dayhrs].toString();
+          }
+        }
+    }
+    this.totalHours['day'+day+'hrs']=total;     
+    return total;
+ }
+
+  addTimes= function(start,end){
+      var time1= start.split(':');
+      var time2= end.split(':');
+      var theFutureTime = moment().hour(time1[0]).minute(time1[1]).add(time2[0],'hours').add(time2[1],'minutes').format("HH:mm");
+     //var totaltime= moment('theFutureTime', 'hh:mm:ss A')
+      
+      return theFutureTime;
 
   }
 }
