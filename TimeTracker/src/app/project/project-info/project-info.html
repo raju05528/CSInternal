@@ -12,15 +12,15 @@
 
                 </li>
                 <li [ngClass]="{ 'active': tab2}">
-                    <a class="cld_header_list" data-toggle="tab" (click)="onTabClick(1)">Member Assignment</a>
-
-                </li>
+                    <a class="cld_header_list" data-toggle="tab" (click)="onTabClick(3)">Client Info</a>
+                </li>                
                 <li [ngClass]="{ 'active': tab3}">
                     <a class="cld_header_list" data-toggle="tab" (click)="onTabClick(2)">Task</a>
 
                 </li>
                 <li [ngClass]="{ 'active': tab4}">
-                    <a class="cld_header_list" data-toggle="tab" (click)="onTabClick(3)">Client Info</a>
+                    <a class="cld_header_list" data-toggle="tab" (click)="onTabClick(1)">Member Assignment</a>
+
                 </li>
             </ul>
         </div>
@@ -130,7 +130,7 @@
                                         <div class="btn-toolbar pull-xs-right m-t-1">
                                         </div>
                                         <div class="btn-toolbar pull-xs-right m-t-1" style="padding-right:15px;">
-                                            <input type="submit" class="btn cld_contact_button cld_contact_button_width" (click)="saveProject()" value="SAVE">
+                                            <input type="submit" class="btn cld_contact_button cld_contact_button_width" (click)="saveProject()" value="Next">
                                         </div>
                                     </div>
                                 </div>
