@@ -47,14 +47,17 @@ export class Home implements OnInit {
     console.log(e);
   }
   ngOnInit(): any {
-    this.projectService.getAllEmployees().subscribe((data) => {
+    this.projectService.getTimeEntryEmployeesDetails().subscribe((data) => {
       //data is your employee list      
       var emprecs = data;
-      console.log('---------------Employee details------------------');
+      console.log('---------------Employee details------------------'+JSON.stringify(emprecs));
       for (var emp in emprecs) {
+        console.log('emp : '+emp);
         if (emp == "recordset") {
           var empparsed = emprecs[emp];
-          this.emplst=emprecs[emp];         
+          console.log('empparsed : '+JSON.stringify(empparsed));
+          this.emplst=emprecs[emp];    
+          console.log('this.emplst : '+JSON.stringify(this.emplst));     
         }
       }
     })

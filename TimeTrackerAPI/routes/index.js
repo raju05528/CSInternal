@@ -3,11 +3,33 @@ let express = require('express');
 let router = express.Router();
 let db = require("../db.js");
 let TimeSheet = require("../modules/TimeSheet.js");
+var dateFormat = require('dateformat');
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
     res.render('index', { title: 'ExpressTimeSheet' });
 });
+
+Date.prototype.addDays = function(days) {
+  var dat = new Date(this.valueOf());
+  dat.setDate(dat.getDate() + days);
+  return dat;
+}
+router.get('/TimeSheet/GetTimeEntryEmployeesDetails', function (req, res) {    
+     let EndDate = new Date();           
+     let FromDate=EndDate;//EndDate.addDays(-28);         
+    dateFormat.masks.hammerTime = 'yyyy-mm-dd'; //'dd-mm-yyyy HH:MM:ss'   
+    console.log('FromDate : '+ dateFormat(FromDate, "hammerTime"));
+     let Status="submitted";  
+     let EmpID="MSI1368";     
+    let TimeSheetObj = new TimeSheet();    
+    TimeSheetObj.GetTimeEntryEmployeesDetails(dateFormat(FromDate, "hammerTime"),dateFormat(EndDate, "hammerTime"),Status,EmpID,function (err, result) {
+        if (err)
+            reject(err);
+        res.json(result);
+    })
+});
+
 router.get('/TimeSheet/selectEmp', function (req, res) {
     let TimeSheetObj = new TimeSheet();
     TimeSheetObj.selectEmp(function (err, result) {

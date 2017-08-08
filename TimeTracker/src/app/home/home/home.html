@@ -10,21 +10,27 @@
     <div class="col-md-8 col-xs-8">
      
         <div>
-          <h2>Employee Related Information</h2>
+          <h2>Employee Detailed Information</h2>
           <div>
             <table class="table table-responsive" class="table table-bordered">
               <thead>
                 <tr>
-                  <th>FirstName</th>
-                  <th>LastName</th>
-                  <th>EmailId</th>
+                  <th>EmployeeID</th>
+                  <th>EmployeeName</th>
+                  <th>ProjectName</th>
+                  <th>TaskName</th>
+                  <th>NoOfHours</th>
+                  <th>Status</th>
                 </tr>
               </thead>
               <tbody>
                 <tr *ngFor="let rec of emplst">
-                  <td>{{rec.FirstName}}</td>
-                  <td>{{rec.LastName}}</td>
-                  <td>{{rec.EmailID }}</td>
+                  <td>{{rec.EmpID}}</td>
+                  <td>{{rec.EmployeeName}}</td>
+                  <td>{{rec.ProjectName }}</td>
+                  <td>{{rec.TaskName }}</td>
+                  <td>{{rec.NoOfHours }}</td>
+                  <td>{{rec.Status }}</td>
                 </tr>
               </tbody>
             </table>

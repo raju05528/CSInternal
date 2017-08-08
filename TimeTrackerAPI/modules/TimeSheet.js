@@ -4,6 +4,37 @@ let cloudlog = require('../modules/logger.js');
 let sql = require("mssql");
 
 module.exports = class Timesheet {
+
+    GetTimeEntryEmployeesDetails(FromDate,EndDate,Status,EmpID,callback){
+    let db_connect = new db();
+       let cldLog = new cloudlog();
+       cldLog.logInfo('inside selectEmp');
+       db_connect.getConnection(function (err, req) { 
+           cldLog.logInfo('inside getconnection'+req);
+            if (err) {
+                cldLog.logInfo('inside getconnection err');
+            }
+            if(req)
+                {                    
+                    console.log('before sp call :FromDate : '+FromDate);
+                    console.log('before sp call : EndDate : '+EndDate);
+                    console.log('before sp call : Status : '+Status);
+                    console.log('before sp call : EmpID : '+EmpID);
+                    req.input('FromDate', sql.Date,FromDate);   
+                    req.input('EndDate', sql.Date,EndDate);   
+                    req.input('Status', sql.VarChar,Status);   
+                    req.input('EmpID', sql.VarChar,EmpID);                            
+                    req.execute("Usp_GetEmployeeTimeEntry").then(function (recordSet) {            
+                            console.log('recordSet : '+JSON.stringify(recordSet));
+                            db_connect.closeConnection();
+                            callback(null,recordSet);
+                        }).catch(function (err) {                            
+                            console.log(err);
+                            db_connect.closeConnection();
+                        });                                              
+                }
+       });   
+    }
    selectEmp(callback){
        let db_connect = new db();
        let cldLog = new cloudlog();
@@ -15,7 +46,7 @@ module.exports = class Timesheet {
             }
             if(req)
                 {        
-                    
+                    //req.input('EmployeeID', sql.Int,0);
                     req.execute("Usp_GetEmployeeDetails").then(function (recordSet) {            
                             console.log('recordSet : '+JSON.stringify(recordSet));
                             db_connect.closeConnection();
@@ -23,17 +54,7 @@ module.exports = class Timesheet {
                         }).catch(function (err) {                            
                             console.log(err);
                             db_connect.closeConnection();
-                        });
-                    
-                //   req.query("SELECT * FROM Employee", function (err,recs) {
-                //         if (err) {
-                //             console.log(err);
-                //         }
-                //         else {  
-                //             db_connect.closeConnection();                                                                                  
-                //             callback(null,recs);
-                //         }                       
-                //     });                 
+                        });                                              
                 }
        });   
    }

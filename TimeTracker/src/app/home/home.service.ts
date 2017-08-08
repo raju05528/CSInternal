@@ -28,6 +28,9 @@ export class ProjectService {
         // }
     }
     private nodeUrl = 'http://localhost:3000';
+    public getTimeEntryEmployeesDetails(){
+        return this.http.get(this.baseURL + '/TimeSheet/GetTimeEntryEmployeesDetails').map((res) => res.json());
+    }
     public getAllEmployees() {
         return this.http.get(this.baseURL + '/TimeSheet/selectEmp').map((res) => res.json());
     }

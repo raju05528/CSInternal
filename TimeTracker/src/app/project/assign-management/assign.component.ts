@@ -29,10 +29,12 @@ export class AssignManagementInfo implements OnInit {
         if (emp == "recordset") {
           var empparsed = emprecs[emp];
           this.emplst = emprecs[emp];
+          console.log('default call : '+JSON.stringify(this.emplst))
           for (var i = 0; i < empparsed.length; i++) {
             console.log('Employee FirstName : ' + empparsed[i].FirstName);
             console.log('Employee LastName : ' + empparsed[i].LastName);
             console.log('Employee EmailID : ' + empparsed[i].EmailID);
+            console.log('Employee EmailID : ' + empparsed[i].EmployeeName);
           }
         }
       }
@@ -47,7 +49,7 @@ export class AssignManagementInfo implements OnInit {
       //data is your employee list      
       var emprecs = resdata;
       console.log('---------------Employee details------------------');
-      console.log('getSelectedEmployees response data : '+JSON.stringify(emprecs));
+     // console.log('getSelectedEmployees response data : '+JSON.stringify(emprecs));
         for (var emp in emprecs) {
         if (emp == "recordset") {
           var empparsed = emprecs[emp];
